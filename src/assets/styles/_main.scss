@@ -1,0 +1,12 @@
+@import 'colors';
+
+@import 'overrides';
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+.slick-slider .slick-track {
+  display: inline-flex;
+}
+
+@import 'styles';

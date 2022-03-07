@@ -1,0 +1,17 @@
+@import '../../assets/styles/colors';
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    a {
+      color: $white;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    font-size: 1.5625rem;
+  }
+}
