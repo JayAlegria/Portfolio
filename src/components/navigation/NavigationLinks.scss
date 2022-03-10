@@ -1,0 +1,38 @@
+@use '../../assets/styles/colors' as colors;
+
+.header-nav {
+  ul {
+    list-style-type: none;
+
+    li {
+      a {
+        color: colors.$white;
+        cursor: pointer;
+        &::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 0;
+          background: colors.$primary;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: width ease-in-out 0.4s;
+        }
+      }
+      &:nth-child(1) {
+        padding-left: 0 !important;
+      }
+
+      &.active,
+      &:hover {
+        a {
+          position: relative;
+          &::after {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

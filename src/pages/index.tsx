@@ -1,13 +1,18 @@
 import * as React from 'react';
-import Header from '../components/header/Header';
+import { SectionContext, SectionProvider } from '../components/context/SectionContext';
 import Layout from '../components/layout/Layout';
+import { SmartSectionDisplay } from '../components/SmartSectionDisplay';
+import { SmartTopNavgation } from '../components/SmartTopNavgation';
 
 const IndexPage = () => {
+  const activeSection = React.useContext(SectionContext);
+  console.log(activeSection);
   return (
     <Layout>
-      <>
-        <Header />
-      </>
+      <SectionProvider>
+        <SmartTopNavgation />
+        <SmartSectionDisplay />
+      </SectionProvider>
     </Layout>
   );
 };
