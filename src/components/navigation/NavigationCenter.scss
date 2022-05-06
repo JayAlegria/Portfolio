@@ -1,5 +1,3 @@
-@use '../../assets/styles/colors' as colors;
-
 .nav.center {
   .social-links {
     a {
@@ -9,11 +7,10 @@
       }
     }
     .bi {
-      color: colors.$white;
       font-size: 30px;
 
       &:hover {
-        color: colors.$primary;
+
       }
     }
   }

@@ -1,0 +1,62 @@
+import React from 'react';
+import './AboutSkills.scss';
+
+const skills = [
+  {
+    name: 'React Js',
+    icon: 'bi-filetype-jsx',
+    iconColor: 'text-teal',
+  },
+  {
+    name: 'html',
+    icon: 'bi-filetype-html',
+    iconColor: 'text-primary',
+  },
+  {
+    name: 'css',
+    icon: 'bi-filetype-css',
+    iconColor: 'text-danger',
+  },
+  {
+    name: 'Shopify Liquid',
+    icon: 'bi-droplet',
+    iconColor: 'text-info',
+  },
+  {
+    name: 'css',
+    icon: 'bi-filetype-scss',
+    iconColor: 'text-secondary',
+  },
+  {
+    name: 'html',
+    icon: 'bi-filetype-html',
+    iconColor: 'text-primary',
+  },
+  {
+    name: 'css',
+    icon: 'bi-filetype-css',
+  },
+  {
+    name: 'html',
+    icon: 'bi-filetype-html',
+    iconColor: 'text-primary',
+  },
+];
+
+export const AboutSkills = () => {
+  return (
+    <div className="about__skills py-5">
+      <p className="vertical-line">Skills</p>
+      <div className="row mt-3">
+        {skills.map((skill) => (
+          <div className="col-3 mb-5">
+            <div className="p-3 bg-semi-transparent skill-card">
+              <i className={`bi mb-0 ${skill.icon} ${skill.iconColor}`}></i>
+              <p className="text-muted">{skill.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};

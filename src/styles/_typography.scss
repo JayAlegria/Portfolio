@@ -1,0 +1,39 @@
+$poppins: 'Poppins',sans-serif;
+$raleway: 'Raleway',sans-serif;
+body {
+    font-size: 16px;
+    font-family: $raleway;
+    font-weight: 400;
+}
+
+h1,
+h2, 
+h3,
+h4 {
+    font-family: $poppins;
+    font-weight: 600;
+}
+
+p {
+    &.vertical-line {
+        position: relative;
+        display: inline-block;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        --bs-text-opacity: 1;
+        color: #6c757d !important;
+        margin-bottom: 0 !important;
+        text-transform: uppercase;
+    
+        &::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 110%;
+        }
+    }
+}

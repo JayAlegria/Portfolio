@@ -1,4 +1,3 @@
-@import '../../assets/styles/colors';
 .header {
   display: flex;
   align-items: center;
@@ -6,12 +5,16 @@
 
   h1 {
     a {
-      color: $white;
-      font-weight: 700;
+      font-weight: 600;
+      font-size: 50px;
     }
   }
 
   p {
     font-size: 1.5625rem;
+  }
+
+  .section-wrapper {
+    background: transparent;
   }
 }

@@ -1,19 +1,16 @@
 import * as React from 'react';
-import { SectionContext, SectionProvider } from '../components/context/SectionContext';
+import { SectionProvider } from '../components/context/SectionContext';
 import Layout from '../components/layout/Layout';
 import { SmartSectionDisplay } from '../components/SmartSectionDisplay';
-import { SmartTopNavgation } from '../components/SmartTopNavgation';
-
+import { SmartTopNavigation } from '../components/SmartTopNavigation';
 const IndexPage = () => {
-  const activeSection = React.useContext(SectionContext);
-  console.log(activeSection);
   return (
-    <Layout>
-      <SectionProvider>
-        <SmartTopNavgation />
+    <SectionProvider>
+      <Layout>
+        <SmartTopNavigation />
         <SmartSectionDisplay />
-      </SectionProvider>
-    </Layout>
+      </Layout>
+    </SectionProvider>
   );
 };
 

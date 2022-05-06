@@ -1,20 +1,22 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 
-import '../../assets/styles/_main.scss';
+import '../../styles/_main.scss';
 
 type childrenType = {
-  children: ReactElement;
+  children: ReactNode;
 };
 
 function Layout({ children }: childrenType) {
   return (
     <>
       <Helmet title="Jay Alegria" defer={false}>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Helmet>
       <div className="page-container">{children}</div>
     </>

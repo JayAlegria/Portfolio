@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
+import { animated } from 'react-spring';
+import { SectionWrapper } from '../layout/SectionWrapper';
 import { NavigationCenter } from '../navigation/NavigationCenter';
 import './Header.scss';
 
-export const Header = () => {
+interface Props {
+  styles: {};
+}
+
+export const Header: FC<Props> = ({ styles }) => {
   return (
-    <section className="header">
+    <SectionWrapper name="header" styles={styles}>
       <div className="container">
         <NavigationCenter />
       </div>
-    </section>
+    </SectionWrapper>
   );
 };

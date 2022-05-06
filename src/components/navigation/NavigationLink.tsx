@@ -9,9 +9,9 @@ export const NavigationLink: FC<Props> = ({ title }) => {
   const updateSectionDisplay = useUpdateSection();
   const activeSection = useSection();
   return (
-    <li className={classNames({ 'p-3': true, active: activeSection === title.toUpperCase() })}>
+    <li className={classNames({ 'px-2': true, active: activeSection === title.toUpperCase() })}>
       <a
-        className="nav-link pb-2 px-0"
+        className="nav-link pb-2 px-0 py-0"
         onClick={() => {
           updateSectionDisplay(title.toUpperCase());
         }}

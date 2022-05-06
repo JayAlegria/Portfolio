@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
+import { animated } from 'react-spring';
+import { SectionHead } from '../common/SectionHead';
+import { SectionWrapper } from '../layout/SectionWrapper';
+import { AboutIntro } from './AboutIntro';
+import { AboutSkills } from './AboutSkills';
 
-function About() {
-  return (
-    <section>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tempore, explicabo amet earum ipsam deleniti
-      suscipit, doloremque molestias iste modi saepe ratione dolores. Facere, ipsam exercitationem eaque necessitatibus
-      delectus autem.
-    </section>
-  );
+interface Props {
+  styles: {};
 }
 
-export default About;
+export const About: FC<Props> = ({ styles }) => {
+  return (
+    <SectionWrapper name="about" styles={styles}>
+      <SectionHead title="ABOUT" subtitle="LEARN MORE ABOUT ME" />
+      <AboutIntro />
+      <AboutSkills />
+    </SectionWrapper>
+  );
+};

@@ -1,17 +1,16 @@
-@use '../../assets/styles/colors' as colors;
 nav.top {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
   & > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     h1 {
       a {
-        color: colors.$white;
         font-weight: 700;
         text-decoration: none;
       }

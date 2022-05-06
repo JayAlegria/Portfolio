@@ -1,0 +1,12 @@
+$theme-colors: (
+  'primary': red,
+);
+
+$custom-colors: (
+  'white': #fff,
+  'gray': #e5e5e5,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';

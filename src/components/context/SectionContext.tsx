@@ -2,6 +2,7 @@ import React, { createContext, FC, ReactNode, useContext, useState } from 'react
 
 export const SectionContext = createContext<string | null>(null);
 export const UpdateSectionContext = createContext<(sectionName: string) => void | null>(null!);
+export const SectionTransitionContext = createContext(null);
 
 export const useSection = () => {
   return useContext(SectionContext);
