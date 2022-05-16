@@ -1,3 +1,4 @@
+@use '../../styles/colors' as colors;
 .header-nav {
   ul {
     list-style-type: none;
@@ -6,11 +7,13 @@
       a {
         cursor: pointer;
         position: relative;
-
+        color: colors.$gray;
+        letter-spacing: 1px;
         &::after {
           content: '';
           height: 2px;
           width: 0;
+          background-color: colors.$primary;
           transition: width ease-in-out 0.4s;
           display: block;
           position: absolute;
@@ -23,10 +26,14 @@
       &.active,
       &:hover {
         a {
+          color: colors.$white;
           &::after {
             width: 50%;
           }
         }
+      }
+      &.active {
+        font-weight: 600;
       }
     }
   }

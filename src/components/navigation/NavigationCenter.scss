@@ -1,16 +1,33 @@
+@use '../../styles/colors' as colors;
 .nav.center {
+  h1 {
+    a {
+      text-decoration: none !important;
+    }
+  }
   .social-links {
     a {
       display: inline-block;
+      color: colors.$white;
+      background: rgba(255, 255, 255, 0.1);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      text-align: center;
+
       &:not(:first-child) {
         margin-left: 15px;
       }
-    }
-    .bi {
-      font-size: 30px;
 
       &:hover {
+        background: colors.$primary;
+      }
+    }
+    .bi {
+      font-size: 20px;
 
+      &:hover {
       }
     }
   }

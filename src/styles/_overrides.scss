@@ -1,10 +1,13 @@
+@use './colors' as colors;
+
 $theme-colors: (
-  'primary': red,
+  'primary': colors.$primary,
 );
 
 $custom-colors: (
-  'white': #fff,
-  'gray': #e5e5e5,
+  'white': colors.$white,
+  'gray': colors.$gray,
+  'black': colors.$black,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

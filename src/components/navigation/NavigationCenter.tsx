@@ -8,13 +8,15 @@ export const NavigationCenter = () => {
     <nav className="nav center">
       <div>
         <h1>
-          <a href="#">Jay Alegria</a>
+          <a href="/" className="text-white">
+            Jay Alegria
+          </a>
         </h1>
-        <p>
+        <p className="text-gray">
           I'm a front-end <span className="text-underline">Web developer</span> from Philippines
         </p>
         <NavigationLinks />
-        <div className="social-links">
+        <div className="social-links mt-3">
           <SocialLink link="#" icon="bi-twitter" />
           <SocialLink link="#" icon="bi-facebook" />
           <SocialLink link="#" icon="bi-instagram" />

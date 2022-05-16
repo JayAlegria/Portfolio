@@ -4,6 +4,9 @@ nav.top {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.9);
+  a {
+    color: inherit;
+  }
   z-index: 999;
   & > .container {
     display: flex;
