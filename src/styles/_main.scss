@@ -4,6 +4,10 @@
 // Bootstrap Override
 @import './overrides';
 
+// react slick
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 // Custom Codes
 @import './colors';
 @import './typography';

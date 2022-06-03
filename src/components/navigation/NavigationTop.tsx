@@ -9,7 +9,7 @@ export const NavigationTop = () => {
     <nav className="nav top py-3">
       <div className="container">
         <h1 className="mb-0">
-          <a href="index.html">Jay Alegria</a>
+          <a href="/">Jay Alegria</a>
         </h1>
         <NavigationLinks />
       </div>
