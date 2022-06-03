@@ -1,12 +1,21 @@
+@use '../../styles/colors' as colors;
 .about__skills {
-    .bi {
-        font-size: 60px;
+  .bi {
+    font-size: 60px;
+  }
+  p.text-muted {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .skill-card {
+    text-align: center;
+
+    &:hover {
+      background: colors.$primary;
+      .bi,
+      p {
+        color: colors.$white !important;
+      }
     }
-    p.text-muted {
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    .skill-card {
-        text-align: center;
-    }
+  }
 }

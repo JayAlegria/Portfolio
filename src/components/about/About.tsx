@@ -1,9 +1,10 @@
 import React, { FC, ReactNode } from 'react';
-import { animated } from 'react-spring';
 import { SectionHead } from '../common/SectionHead';
 import { SectionWrapper } from '../layout/SectionWrapper';
+import { AboutInterests } from './AboutInterests';
 import { AboutIntro } from './AboutIntro';
 import { AboutSkills } from './AboutSkills';
+import { AboutTestimonials } from './AboutTestimonials';
 
 interface Props {
   styles: {};
@@ -15,6 +16,8 @@ export const About: FC<Props> = ({ styles }) => {
       <SectionHead title="ABOUT" subtitle="LEARN MORE ABOUT ME" />
       <AboutIntro />
       <AboutSkills />
+      <AboutInterests />
+      <AboutTestimonials />
     </SectionWrapper>
   );
 };

@@ -1,0 +1,52 @@
+@use '../../styles/colors' as colors;
+.about__testimonials {
+  .qoute {
+    p {
+      font-weight: 300;
+      &::before,
+      &::after {
+        content: '';
+        height: 50px;
+        width: 50px;
+        display: block;
+        filter: invert(100);
+        position: block;
+      }
+      &::before {
+        background: url('../../images/svg/quote-left.svg') no-repeat;
+        text-align: left;
+        opacity: 50%;
+      }
+    }
+  }
+  .author {
+    margin-top: -40px;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    p {
+      font-weight: 600;
+      letter-spacing: normal;
+    }
+    a {
+      text-decoration: none;
+    }
+    .bi {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      display: block;
+      background: colors.$bgClear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        font-size: 50px;
+        padding: 10px;
+        background: colors.$primary;
+        border-radius: 50%;
+      }
+    }
+  }
+}

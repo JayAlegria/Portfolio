@@ -19,6 +19,15 @@ body {
 }
 
 // global style
+* {
+  &:focus,
+  &:active {
+    border: 0;
+    box-shadow: none;
+    background: none;
+    outline: none;
+  }
+}
 .text-underline {
   color: #fff;
   padding-bottom: 6px;
@@ -38,4 +47,27 @@ body {
 
 .bg-semi-transparent {
   background: colors.$bgClear;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  &:hover {
+    background: colors.$primary;
+    color: colors.$white;
+  }
+}
+
+.vertical-line {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 2px;
+    background-color: colors.$primary;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
