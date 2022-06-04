@@ -3,6 +3,7 @@
   .qoute {
     p {
       font-weight: 300;
+      letter-spacing: normal;
       &::before,
       &::after {
         content: '';
@@ -26,7 +27,6 @@
     display: inline-block;
     p {
       font-weight: 600;
-      letter-spacing: normal;
     }
     a {
       text-decoration: none;
@@ -46,6 +46,20 @@
         padding: 10px;
         background: colors.$primary;
         border-radius: 50%;
+      }
+    }
+  }
+
+  .slick-dots {
+    li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: colors.$gray;
+
+      &.slick-active {
+        background: colors.$primary;
       }
     }
   }

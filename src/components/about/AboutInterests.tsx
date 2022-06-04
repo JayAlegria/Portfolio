@@ -17,12 +17,12 @@ const interests = [
     iconColor: 'text-danger',
   },
   {
-    name: 'AWS',
+    name: 'dev',
     icon: 'bi-filetype-css',
     iconColor: 'text-danger',
   },
   {
-    name: 'AWS',
+    name: 'ye',
     icon: 'bi-filetype-css',
     iconColor: 'text-danger',
   },
@@ -33,7 +33,7 @@ export const AboutInterests = () => {
       <p className="vertical-line">Interests</p>
       <div className="row mt-3 justify-content-between">
         {interests.map((interest) => (
-          <div className="col-3 mt-3">
+          <div key={interest.name} className="col-3 mt-3">
             <div className=" interest-card px-3 py-3 bg-semi-transparent">
               <p className="mb-0">
                 <span className={`${interest.icon} ${interest.iconColor} bi me-3`}></span> {interest.name}

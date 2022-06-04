@@ -1,0 +1,41 @@
+@use '../../styles/colors' as colors;
+.services {
+  &__item {
+    background: colors.$bgClear;
+    transition: background 0.4s ease;
+    &:hover {
+      background: colors.$primary;
+      .bi {
+        &::before {
+          background-color: colors.$white;
+          color: colors.$primary;
+        }
+      }
+    }
+    .bi {
+      font-size: 40px;
+      position: relative;
+      display: block;
+      &::before {
+        background-color: colors.$primary;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 2;
+        position: relative;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        height: 100%;
+        width: 100%;
+        background: colors.$bgClear;
+        border-radius: 5px;
+        z-index: 1;
+      }
+    }
+  }
+}

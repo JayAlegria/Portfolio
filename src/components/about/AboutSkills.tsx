@@ -23,21 +23,21 @@ const skills = [
     iconColor: 'text-info',
   },
   {
-    name: 'css',
+    name: 'java',
     icon: 'bi-filetype-scss',
     iconColor: 'text-secondary',
   },
   {
-    name: 'html',
+    name: 'python',
     icon: 'bi-filetype-html',
     iconColor: 'text-primary',
   },
   {
-    name: 'css',
+    name: 'ruby',
     icon: 'bi-filetype-css',
   },
   {
-    name: 'html',
+    name: 'php',
     icon: 'bi-filetype-html',
     iconColor: 'text-primary',
   },
