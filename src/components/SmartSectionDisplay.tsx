@@ -5,6 +5,7 @@ import { Header } from './header/Header';
 import { Resume } from './resume/Resume';
 import { useTransition } from 'react-spring';
 import { Services } from './services/Services';
+import { Portfolio } from './portfolio/Portfolio';
 
 export const SmartSectionDisplay: FC = () => {
   const activeSection = useSection();
@@ -23,6 +24,8 @@ export const SmartSectionDisplay: FC = () => {
         return <Resume styles={styles} />;
       case 'SERVICES':
         return <Services styles={styles} />;
+      case 'PORTFOLIO':
+        return <Portfolio styles={styles} />;
     }
   });
 };

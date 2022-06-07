@@ -9,7 +9,7 @@ function NavigationCenterLinks() {
         <NavigationLink title="About" />
         <NavigationLink title="Resume" />
         <NavigationLink title="Services" />
-        <NavigationLink title="PortFolio" />
+        <NavigationLink title="Portfolio" />
         <NavigationLink title="Contact" />
       </ul>
     </nav>

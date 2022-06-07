@@ -1,0 +1,28 @@
+@use '../../styles/colors' as colors;
+
+.portfolio-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__screenshot {
+    width: 680px;
+    height: 90vh;
+    background-size: cover;
+    background-position: top;
+    transition: 10s;
+    border-radius: 6px;
+
+    &:hover {
+      background-position: bottom;
+    }
+  }
+
+  &__info {
+    ul {
+      columns: 2;
+    }
+  }
+}

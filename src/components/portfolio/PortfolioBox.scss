@@ -1,0 +1,31 @@
+.portfolio__item {
+  cursor: pointer;
+  .inner {
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 70%;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgba(17, 17, 17, 0.773);
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    .overlay {
+      opacity: 1;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
