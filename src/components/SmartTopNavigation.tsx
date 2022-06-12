@@ -12,7 +12,7 @@ export const SmartTopNavigation = () => {
   });
 
   return transitions((styles, item) => {
-    if (item !== 'HOME') {
+    if (item?.c !== 'HOME') {
       return (
         <animated.div style={{ position: 'absolute', width: '100%', ...styles }}>
           <NavigationTop />

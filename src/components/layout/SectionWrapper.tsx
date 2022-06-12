@@ -3,7 +3,7 @@ import { animated } from 'react-spring';
 import './SectionWrapper.scss';
 
 interface Props {
-  styles: {};
+  styles?: {};
   name: string;
   children: ReactNode;
 }

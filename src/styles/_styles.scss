@@ -18,6 +18,24 @@ body {
   }
 }
 
+.page-container {
+  height: 100vh;
+  overflow: hidden;
+
+  .inner {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      background: transparent;
+    }
+  }
+}
+
 // global style
 * {
   &:focus,
