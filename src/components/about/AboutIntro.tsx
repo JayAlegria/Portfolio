@@ -1,5 +1,7 @@
 import React from 'react';
 import { AboutIntroDetails } from './AboutIntroDetails';
+import './AboutIntro.scss';
+import me from '../../images/me.jpg';
 
 const aboutMe = [
   {
@@ -42,7 +44,9 @@ const aboutMe = [
 export const AboutIntro = () => {
   return (
     <div className="row mt-5 about__intro">
-      <div className="col-4">test</div>
+      <div className="col-4">
+        <img src={me} alt="Jay laurence Alegria" />
+      </div>
       <div className="col-8">
         <h3 className="text-primary">UI/UX & Graphic Designer</h3>
         <p>

@@ -18,7 +18,7 @@ export const SmartSectionDisplay: FC = () => {
   return transitions((styles, item) => {
     switch (item?.c) {
       case 'HOME':
-        return <Header styles={styles} />;
+        return null;
       case 'ABOUT':
         return <About styles={styles} />;
       case 'RESUME':

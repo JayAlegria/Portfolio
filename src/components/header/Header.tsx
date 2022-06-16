@@ -1,19 +1,17 @@
 import React, { FC, ReactNode } from 'react';
 import { animated } from 'react-spring';
 import { SectionWrapper } from '../layout/SectionWrapper';
-import { NavigationCenter } from '../navigation/NavigationCenter';
+import { Navigation } from '../navigation/Navigation';
 import './Header.scss';
 
-interface Props {
-  styles: {};
-}
+type Props = {
+  styles?: {};
+};
 
 export const Header: FC<Props> = ({ styles }) => {
   return (
     <SectionWrapper name="header" styles={styles}>
-      <div className="container">
-        <NavigationCenter />
-      </div>
+      <Navigation />
     </SectionWrapper>
   );
 };
