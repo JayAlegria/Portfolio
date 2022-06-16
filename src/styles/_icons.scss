@@ -1,0 +1,19 @@
+.custom-icon {
+  &::before {
+    content: '';
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  }
+  &.s-icon {
+    &::before {
+      height: 30px;
+      width: 20px;
+    }
+  }
+  &.bi-fiverr {
+    background-image: url('../images/svg/fiverr-white.svg');
+    background-repeat: no-repeat;
+  }
+}

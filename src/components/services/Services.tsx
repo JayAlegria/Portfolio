@@ -45,7 +45,7 @@ export const Services: FC<Props> = ({ styles }) => {
       <SectionHead title="Services" subtitle="My Services" />
       <div className="services__row row mt-5">
         {ServicesItem.map((serviceItem) => (
-          <div className="col-lg-4 mb-4">
+          <div key={serviceItem.name} className="col-lg-4 mb-4">
             <div className="p-5 services__item d-flex align-items-center justify-center flex-column text-center">
               <span className={`bi ${serviceItem.icon}`}></span>
               <p className="h4 my-3">{serviceItem.name}</p>

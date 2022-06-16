@@ -34,6 +34,12 @@ body {
       background: transparent;
     }
   }
+
+  &.home {
+    .inner {
+      overflow-y: hidden;
+    }
+  }
 }
 
 // global style
