@@ -5,12 +5,12 @@ function NavigationCenterLinks() {
   return (
     <nav className="header-nav">
       <ul className="d-flex px-0 py-2 mb-0">
-        <NavigationLink title="Home" />
-        <NavigationLink title="About" />
-        <NavigationLink title="Resume" />
-        <NavigationLink title="Services" />
-        <NavigationLink title="PortFolio" />
-        <NavigationLink title="Contact" />
+        <NavigationLink title="Home" entryAnimation={{ y: 30, opacity: 1 }} />
+        <NavigationLink title="About" entryAnimation={{ y: 0, opacity: 1 }} />
+        <NavigationLink title="Resume" entryAnimation={{ y: 0, opacity: 1 }} />
+        <NavigationLink title="Services" entryAnimation={{ y: 0, opacity: 1 }} />
+        <NavigationLink title="Portfolio" entryAnimation={{ y: 0, opacity: 1 }} />
+        <NavigationLink title="Contact" entryAnimation={{ y: 0, opacity: 1 }} />
       </ul>
     </nav>
   );

@@ -18,7 +18,9 @@ function Layout({ children }: childrenType) {
           rel="stylesheet"
         />
       </Helmet>
-      <div className="page-container">{children}</div>
+      <div className="page-container">
+        <div className="inner">{children}</div>
+      </div>
     </>
   );
 }

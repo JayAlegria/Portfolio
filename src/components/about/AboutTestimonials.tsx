@@ -53,19 +53,21 @@ const testimonials = [
 export const AboutTestimonials = () => {
   const settings = {
     dots: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: false,
+    adaptiveHeight: true,
   };
   return (
     <>
-      <div className="about__testimonials pt-5">
+      <div className="about__testimonials py-5">
         <p className="vertical-line">Testimonials</p>
         <div className="mt-3">
           <Slider {...settings}>
             {testimonials.map((testimonial) => (
-              <div className="p-3 px-3">
+              <div key={testimonial.name} className="p-3 px-3">
                 <div className="testimonial-card">
                   <div className="qoute bg-semi-transparent px-3 py-5">
                     <p className="mb-0">

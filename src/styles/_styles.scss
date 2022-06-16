@@ -8,7 +8,7 @@ body {
   &::before {
     content: '';
     position: fixed;
-    background: #040404 url('../images/bg.jpg') top right no-repeat;
+    background: #040404 url('../images/bg3.jpg') top right no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
@@ -18,8 +18,27 @@ body {
   }
 }
 
+.page-container {
+  height: 100vh;
+  overflow: hidden;
+
+  .inner {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      background: transparent;
+    }
+  }
+}
+
 // global style
-* {
+a,
+button {
   &:focus,
   &:active {
     border: 0;

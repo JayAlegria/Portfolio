@@ -1,0 +1,58 @@
+@use '../../styles/colors' as colors;
+.nav {
+  transition: 0.2s ease;
+  align-items: center;
+  height: 100vh;
+  h1 {
+    a {
+      transition: 0.4s ease;
+      text-decoration: none !important;
+    }
+  }
+  .social-links {
+    a {
+      display: inline-block;
+      color: colors.$white;
+      background: rgba(255, 255, 255, 0.1);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      text-align: center;
+
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+
+      &:hover {
+        background: colors.$primary;
+      }
+    }
+    .bi {
+      font-size: 20px;
+    }
+  }
+}
+nav.top {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  padding: 10px 0;
+  height: 80px;
+
+  & > .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    a {
+      font-size: 30px;
+    }
+  }
+}

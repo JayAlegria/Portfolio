@@ -1,0 +1,43 @@
+@use '../../styles/colors' as colors;
+.resume {
+  &__content {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      height: calc(100% - 20px);
+      width: 2px;
+      background: colors.$gray;
+      opacity: 40%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: colors.$primary;
+      left: 4.5px;
+      top: 10px;
+    }
+
+    .title {
+      color: colors.$primary;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .year {
+      display: inline-block;
+      background: colors.$bgClear;
+      padding: 10px;
+      font-weight: 600;
+    }
+  }
+}
