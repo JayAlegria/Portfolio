@@ -26,10 +26,10 @@ export const Navigation: FC = () => {
         <NavigationLinks />
         {!TopNavigation && (
           <div className="social-links mt-3">
-            <SocialLink link="#" icon="bi-twitter" />
-            <SocialLink link="#" icon="bi-facebook" />
-            <SocialLink link="#" icon="bi-instagram" />
-            <SocialLink link="#" icon="bi-linkedin" />
+            <SocialLink link="https://www.fiverr.com/jaylaurence" icon="bi-fiverr custom-icon s-icon" />
+            <SocialLink link="https://www.facebook.com/pogi.alegria" icon="bi-facebook" />
+            <SocialLink link="https://wa.me/+639165057086" icon="bi-whatsapp" />
+            <SocialLink link="https://www.linkedin.com/in/jay-laurence-alegria-1b0354196/" icon="bi-linkedin" />
           </div>
         )}
       </div>

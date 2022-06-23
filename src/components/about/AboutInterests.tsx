@@ -3,28 +3,63 @@ import React from 'react';
 const interests = [
   {
     name: 'Python',
-    icon: 'bi-filetype-jsx',
+    icon: 'bi-code',
     iconColor: 'text-teal',
   },
   {
     name: 'Data Science',
-    icon: 'bi-filetype-html',
+    icon: 'bi-bar-chart-line',
     iconColor: 'text-primary',
   },
   {
     name: 'AWS',
-    icon: 'bi-filetype-css',
-    iconColor: 'text-danger',
+    icon: 'bi-bookmark',
+    iconColor: 'text-yellow',
   },
   {
-    name: 'dev',
-    icon: 'bi-filetype-css',
-    iconColor: 'text-danger',
+    name: 'Automation',
+    icon: 'bi-cpu',
+    iconColor: 'text-blue',
   },
   {
-    name: 'ye',
-    icon: 'bi-filetype-css',
-    iconColor: 'text-danger',
+    name: 'Robotics',
+    icon: 'bi-robot',
+    iconColor: 'text-green',
+  },
+  {
+    name: 'Cyber Security',
+    icon: 'bi-shield',
+    iconColor: 'text-teal',
+  },
+  {
+    name: 'Mern Stack',
+    icon: 'bi-code',
+    iconColor: 'text-light-orange',
+  },
+  {
+    name: 'Blockchain',
+    icon: 'bi-currency-bitcoin',
+    iconColor: 'text-coral',
+  },
+  {
+    name: 'Virtual Assistant',
+    icon: 'bi-robot',
+    iconColor: 'text-primary',
+  },
+  {
+    name: 'Dropshipping',
+    icon: 'bi-shop',
+    iconColor: 'text-light-orange',
+  },
+  {
+    name: 'Vlogging',
+    icon: 'bi-camera-reels',
+    iconColor: 'text-green',
+  },
+  {
+    name: 'Biking',
+    icon: 'bi-bicycle',
+    iconColor: 'text-teal',
   },
 ];
 export const AboutInterests = () => {
@@ -35,8 +70,8 @@ export const AboutInterests = () => {
         {interests.map((interest) => (
           <div key={interest.name} className="col-3 mt-3">
             <div className=" interest-card px-3 py-3 bg-semi-transparent">
-              <p className="mb-0">
-                <span className={`${interest.icon} ${interest.iconColor} bi me-3`}></span> {interest.name}
+              <p className={`mb-0  ${interest.iconColor}`}>
+                <span className={`${interest.icon} bi me-3`}></span> {interest.name}
               </p>
             </div>
           </div>

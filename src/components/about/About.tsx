@@ -13,7 +13,7 @@ interface Props {
 export const About: FC<Props> = ({ styles }) => {
   return (
     <SectionWrapper name="about" styles={styles}>
-      <SectionHead title="ABOUT" subtitle="LEARN MORE ABOUT ME" />
+      <SectionHead title="ABOUT" subtitle="KNOW MORE ABOUT ME" />
       <AboutIntro />
       <AboutSkills />
       <AboutInterests />

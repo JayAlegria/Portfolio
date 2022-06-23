@@ -2,12 +2,14 @@ import React, { ReactElement, ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 
 import '../../styles/_main.scss';
+import { useSection } from '../context/SectionContext';
 
 type childrenType = {
   children: ReactNode;
 };
 
 function Layout({ children }: childrenType) {
+  const pageClass = useSection();
   return (
     <>
       <Helmet title="Jay Alegria" defer={false}>
@@ -18,7 +20,7 @@ function Layout({ children }: childrenType) {
           rel="stylesheet"
         />
       </Helmet>
-      <div className="page-container">
+      <div className={`page-container ${pageClass?.c.toLowerCase()}`}>
         <div className="inner">{children}</div>
       </div>
     </>

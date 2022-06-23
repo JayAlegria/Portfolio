@@ -6,7 +6,7 @@ interface Props {
 }
 export const SocialLink: FC<Props> = ({ link, icon }) => {
   return (
-    <a href={link} className="twitter">
+    <a href={link} target="blank" className="social-icon">
       <i className={`bi ${icon}`}></i>
     </a>
   );
