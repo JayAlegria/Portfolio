@@ -8,6 +8,12 @@ $custom-colors: (
   'white': colors.$white,
   'gray': colors.$gray,
   'black': colors.$black,
+  'light-orange': colors.$lightOrange,
+  'yellow': colors.$yellow,
+  'blue': colors.$blue,
+  'green': colors.$green,
+  'teal': colors.$teal,
+  'coral': colors.$coral,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

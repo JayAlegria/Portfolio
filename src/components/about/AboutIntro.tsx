@@ -6,7 +6,7 @@ import me from '../../images/me.jpg';
 const aboutMe = [
   {
     title: 'Birthday',
-    description: '21 September 2021',
+    description: '21 September 1997',
   },
   {
     title: 'Website',
@@ -14,7 +14,7 @@ const aboutMe = [
   },
   {
     title: 'Phone',
-    description: '09165057086',
+    description: '+639165057086',
   },
   {
     title: 'Email',
@@ -26,7 +26,7 @@ const aboutMe = [
   },
   {
     title: 'Age',
-    description: '25',
+    description: '24',
   },
   {
     title: 'Degree',
@@ -48,15 +48,21 @@ export const AboutIntro = () => {
         <img src={me} alt="Jay laurence Alegria" />
       </div>
       <div className="col-8">
-        <h3 className="text-primary">UI/UX & Graphic Designer</h3>
+        <h3 className="text-primary">WEB DEVELOPER</h3>
+        <p>Hello!</p>
         <p>
-          <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet voluptatibus nemo dignissimos.</i>
+          I am Jay, a <b>web developer</b> who has expertise in front end development, I commonly build websites using
+          Wordpress, Shopify or React js.
+        </p>
+        <p>
+          In Wordpress and Shopify development, I am more proficient in building pages using custom template or by
+          creating its own theme. I can also build website using page builder or premium themes depends on client desire
+          and timeline.
         </p>
         <AboutIntroDetails aboutMe={aboutMe} />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque rerum, repudiandae amet aperiam
-          veritatis libero molestiae cupiditate aspernatur. Voluptate, amet blanditiis? Neque, laudantium a incidunt
-          quasi enim repudiandae facilis.
+          As a professional web developer, I offer the technical expertise you are seeking for your business need. In my
+          three years of experience I already handled different task regarding to website works.
         </p>
       </div>
     </div>
