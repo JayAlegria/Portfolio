@@ -43,6 +43,9 @@ body {
 }
 
 // global style
+a {
+  color: inherit;
+}
 a,
 button {
   &:focus,

@@ -9,34 +9,40 @@ interface Props {
 
 const ServicesItem = [
   {
-    name: 'Service One',
-    icon: 'bi-filetype-css',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit est autem et',
+    name: 'Wordpress Theme Development',
+    icon: 'bi-wordpress',
   },
   {
-    name: 'Service Two',
-    icon: 'bi-filetype-css',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit est autem et',
+    name: 'Shopify Theme Development',
+    icon: 'bi-shop',
   },
   {
-    name: 'Service Three',
-    icon: 'bi-filetype-css',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit est autem et',
+    name: 'Extend Website Functionality',
+    icon: 'bi-wordpress',
   },
   {
-    name: 'Service Four',
-    icon: 'bi-filetype-css',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit est autem et',
+    name: 'PSD to HTML',
+    icon: 'bi-filetype-html',
   },
   {
-    name: 'Service Five',
-    icon: 'bi-filetype-css',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit est autem et',
+    name: 'PSD to Wordpress',
+    icon: 'bi-wordpress',
   },
   {
-    name: 'Service Five',
-    icon: 'bi-filetype-css',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit est autem et',
+    name: 'PSD to GatsbyJS',
+    icon: 'bi-filetype-jsx',
+  },
+  {
+    name: 'On Page SEO',
+    icon: 'bi-wordpress',
+  },
+  {
+    name: 'Newsletter Template',
+    icon: 'bi-table',
+  },
+  {
+    name: 'Website Maintenance',
+    icon: 'bi-wordpress',
   },
 ];
 export const Services: FC<Props> = ({ styles }) => {
@@ -48,8 +54,7 @@ export const Services: FC<Props> = ({ styles }) => {
           <div key={serviceItem.name} className="col-lg-4 mb-4">
             <div className="p-5 services__item d-flex align-items-center justify-center flex-column text-center">
               <span className={`bi ${serviceItem.icon}`}></span>
-              <p className="h4 my-3">{serviceItem.name}</p>
-              <p>{serviceItem.description}</p>
+              <p className="h5 my-3">{serviceItem.name}</p>
             </div>
           </div>
         ))}

@@ -3,44 +3,6 @@ import { AboutIntroDetails } from './AboutIntroDetails';
 import './AboutIntro.scss';
 import me from '../../images/me.jpg';
 
-const aboutMe = [
-  {
-    title: 'Birthday',
-    description: '21 September 1997',
-  },
-  {
-    title: 'Website',
-    description: 'jayworks.xyz',
-  },
-  {
-    title: 'Phone',
-    description: '+639165057086',
-  },
-  {
-    title: 'Email',
-    description: 'alegriajaylaurence@gmail.com',
-  },
-  {
-    title: 'City',
-    description: 'Batangas City',
-  },
-  {
-    title: 'Age',
-    description: '24',
-  },
-  {
-    title: 'Degree',
-    description: 'Bachelor',
-  },
-  {
-    title: 'Birthday',
-    description: '21 September 2021',
-  },
-  {
-    title: 'Years of Experience',
-    description: '3 years',
-  },
-];
 export const AboutIntro = () => {
   return (
     <div className="row mt-5 about__intro">
@@ -59,7 +21,7 @@ export const AboutIntro = () => {
           creating its own theme. I can also build website using page builder or premium themes depends on client desire
           and timeline.
         </p>
-        <AboutIntroDetails aboutMe={aboutMe} />
+        <AboutIntroDetails />
         <p>
           As a professional web developer, I offer the technical expertise you are seeking for your business need. In my
           three years of experience I already handled different task regarding to website works.

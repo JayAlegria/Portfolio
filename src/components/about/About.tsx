@@ -3,6 +3,7 @@ import { SectionHead } from '../common/SectionHead';
 import { SectionWrapper } from '../layout/SectionWrapper';
 import { AboutInterests } from './AboutInterests';
 import { AboutIntro } from './AboutIntro';
+import { AboutApps } from './AboutApps';
 import { AboutSkills } from './AboutSkills';
 import { AboutTestimonials } from './AboutTestimonials';
 
@@ -16,6 +17,7 @@ export const About: FC<Props> = ({ styles }) => {
       <SectionHead title="ABOUT" subtitle="KNOW MORE ABOUT ME" />
       <AboutIntro />
       <AboutSkills />
+      <AboutApps />
       <AboutInterests />
       <AboutTestimonials />
     </SectionWrapper>

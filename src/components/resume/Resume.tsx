@@ -13,48 +13,29 @@ export const Resume: FC<Props> = ({ styles }) => {
       <div className="mt-5 row resume__row">
         <div className="col-lg-6 resume__column">
           <div className="resume__group mb-5">
-            <p className="h3">Summary</p>
+            <p className="h3">Education</p>
             <div className="resume__content ps-5">
-              <p className="title mb-0">lorem ipsum</p>
-              <span className="year">2016-2019</span>
-              <p className="mt-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ex accusantium iste expedita repellat,
-                voluptatum magni ut sequi voluptate natus iure assumenda! Eaque sint earum totam delectus nulla eos
-                eligendi!'
-              </p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+              <p className="title mb-2">BS COMPUTER ENGINEERING</p>
+              <span className="year">2014-2019</span>
+              <ul className="mt-4">
+                <li>Colegio De Montalban</li>
+                <li>Rodriguez. Rizal, Philippines</li>
               </ul>
             </div>
           </div>
           <div className="resume__group mb-5">
-            <p className="h3">Summary</p>
             <div className="resume__content ps-5">
-              <p className="title">lorem ipsum</p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ex accusantium iste expedita repellat,
-                voluptatum magni ut sequi voluptate natus iure assumenda! Eaque sint earum totam delectus nulla eos
-                eligendi!'
-              </p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+              <p className="title mb-2">WEB DEVELOPMENT</p>
+              <span className="year">MAY 2019</span>
+              <ul className="mt-4">
+                <li>TESDA Training for work scholarship program</li>
+                <li>88 North East Venture Corporation</li>
               </ul>
-            </div>
-            <div className="resume__content ps-5">
-              <p className="title">lorem ipsum</p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ex accusantium iste expedita repellat,
-                voluptatum magni ut sequi voluptate natus iure assumenda! Eaque sint earum totam delectus nulla eos
-                eligendi!'
-              </p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+              <p className="title mb-2">WEB DESIGN</p>
+              <span className="year">JUNE 2019</span>
+              <ul className="mt-4">
+                <li>TESDA Training for work scholarship program</li>
+                <li>88 North East Venture Corporation</li>
               </ul>
             </div>
           </div>
@@ -63,16 +44,43 @@ export const Resume: FC<Props> = ({ styles }) => {
           <div className="resume__group mb-5">
             <p className="h3">Professional Experience</p>
             <div className="resume__content ps-5">
-              <p className="title">lorem ipsum</p>
+              <p className="title mb-0">WEB DEVELOPER</p>
+              <span className="year">2019-present</span>
+              <p className="mt-4">
+                - Help our company developed a software that will let the client and employee interact directly. In this
+                project I developed the landing page and help with the front-end in the dashboard using ReactJS and
+                React Typescript.
+                <br /> Website:<a href="https://brandcaptain.io/"> Brandcaptain.io</a>
+              </p>
+              <p>- Develop, Maintain or extend functionality of our client's website</p>
+              <p>- Maintain and extend functionality of our company website</p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ex accusantium iste expedita repellat,
-                voluptatum magni ut sequi voluptate natus iure assumenda! Eaque sint earum totam delectus nulla eos
-                eligendi!'
+                - Handle all stuff regarding to website development <br /> (
+                <i> except web design and content writing </i>)
               </p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
+                <li>Dot digital Philippines</li>
+                <li>
+                  <a target="_blank" href="https://www.dotdigitalph.com/">
+                    dotdigitalph.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="resume__group mb-5">
+            <div className="resume__content ps-5">
+              <p className="title mb-2">FREELANCE WEB DEVELOPER</p>
+              <span className="year">2020-present</span>
+              <p>- Maintain and extend functionality of client's website</p>
+              <p>-- I only accepts job related to wordpress in my freelancing journey</p>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://www.fiverr.com/jaylaurence">
+                    Fiverr
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
