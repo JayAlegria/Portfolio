@@ -35,5 +35,8 @@
     "react-spring": "9.4.3",
     "sass": "1.49.7",
     "slick-carousel": "1.8.1"
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.8"
   }
 }
