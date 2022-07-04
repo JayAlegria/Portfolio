@@ -1,4 +1,4 @@
-import AvanoThumb from '../../images/bg.jpg';
+import AvanoThumb from '../../images/projects/avano.png';
 
 export type PortfolioCategory = 'wordpress' | 'shopify' | 'react' | 'all';
 
@@ -33,18 +33,30 @@ export interface PortfolioItem {
   fullImage: string;
   category: string[];
   url: string;
+  techStack?: string[];
+  plugins?: string[];
   description: string;
 }
 
 export const PortfolioItems: PortfolioItem[] = [
   {
+    name: 'BrandCaptain',
+    thumbnail: AvanoThumb,
+    fullImage: AvanoThumb,
+    category: ['react'],
+    url: 'https://brandcaptain.io/',
+    techStack: ['React js', 'Gatsby Js', 'Typescript'],
+    description: 'Developed the landing page and help with the front-end of the platform dashboard',
+  },
+  {
     name: 'Avano',
     thumbnail: AvanoThumb,
     fullImage: AvanoThumb,
-    category: ['wordpress', 'react'],
+    category: ['wordpress'],
     url: 'https://avano.us',
-    description:
-      ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quo nostrum dolor tenetur nam quibusdam? Officiis labore eius accusamus amet? Necessitatibus labore odio aliquam reiciendis ratione, enim cumque quia. Laboriosam.',
+    techStack: ['Wordpress', 'PHP', 'SCSS', 'JQuery', 'Javascript', 'Bootstrap'],
+    plugins: ['Contact Form 7', 'Itheme Security', 'ACF', 'CPT UI'],
+    description: 'Transform the design into fully working wordpress theme',
   },
   {
     name: 'Magpie',
