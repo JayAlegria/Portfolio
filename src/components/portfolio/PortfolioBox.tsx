@@ -11,7 +11,7 @@ interface Props {
 export const PortfolioBox: FC<Props> = ({ portfolioData }) => {
   const { name, category, thumbnail } = portfolioData;
   return (
-    <div className="portfolio__item col-lg-4 mb-4">
+    <div className="portfolio__item col-lg-3 mb-4">
       <Item content={<PortfolioItemContent project={portfolioData} />}>
         {({ ref, open }) => (
           <div

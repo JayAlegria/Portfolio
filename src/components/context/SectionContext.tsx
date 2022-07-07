@@ -1,4 +1,5 @@
-import React, { createContext, FC, ReactNode, useContext, useState } from 'react';
+import React, { createContext, FC, ReactNode, useContext, useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
 
 export const SectionContext = createContext<{ c: string; entryAnimation: { y: number; opacity: number } } | null>(null);
 export const UpdateSectionContext = createContext<
@@ -25,6 +26,12 @@ export const SectionProvider: FC<Props> = ({ children }) => {
   const changeActiveSection = (sectionName: string, entryAnimation: { y: number; opacity: number }) => {
     setActiveSection({ c: sectionName, entryAnimation: entryAnimation });
   };
+
+  useEffect(() => {
+    // use to scroll page content to top
+    const section = document.querySelector('.page-container .inner');
+    section?.scrollTo(0, 0);
+  }, [activeSection]);
 
   return (
     <SectionContext.Provider value={activeSection}>
