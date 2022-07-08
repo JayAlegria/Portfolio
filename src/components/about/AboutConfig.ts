@@ -202,16 +202,19 @@ export const ExperienceApp = [
     title: 'Gatsby JS',
   },
   {
+    title: 'GraphQL',
+  },
+  {
     title: 'Cpanel',
+  },
+  {
+    title: 'Mailchimp',
   },
   {
     title: 'Godaddy',
   },
   {
     title: 'Namecheap',
-  },
-  {
-    title: 'Photoshop',
   },
   {
     title: 'Adobe Illustrator',
@@ -224,6 +227,18 @@ export const ExperienceApp = [
   },
   {
     title: 'Filezilla',
+  },
+  {
+    title: 'Divi',
+  },
+  {
+    title: 'Elementor',
+  },
+  {
+    title: 'WPBakery',
+  },
+  {
+    title: 'Gutenberg',
   },
 ];
 

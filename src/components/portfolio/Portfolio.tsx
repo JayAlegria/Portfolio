@@ -26,6 +26,10 @@ export const Portfolio: FC<Props> = ({ styles }) => {
   return (
     <SectionWrapper name="portfolio" styles={styles}>
       <SectionHead title="Portfolio" subtitle="My Works" />
+      <small className="text-muted d-block col-4">
+        I built all the website below, except my portfolio, under the supervision of{' '}
+        <a href="https://www.dotdigitalph.com/">Dot Digital Philippines</a> agency
+      </small>
       <PortfolioFilters onFilter={onFilter} />
       <div className="portfolio__row row my-5">
         <Gallery>
