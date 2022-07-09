@@ -8,7 +8,7 @@ export const PortfolioItemContent: FC<Props> = ({ project }) => {
   return (
     <div className="portfolio-content">
       <div className="inner col-lg-9">
-        <p className="h3 mb-2">{project.name}</p>
+        <p className="h3 mb-3 mb-lg-2 text-primary">{project.name}</p>
         <div className="row portfolio-content__row">
           <div className="col-lg-8">
             <div

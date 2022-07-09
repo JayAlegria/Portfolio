@@ -12,6 +12,16 @@ export const AboutTestimonials = () => {
     slidesToScroll: 3,
     arrows: false,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
   };
   return (
     <>

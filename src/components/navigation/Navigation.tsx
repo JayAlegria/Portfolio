@@ -1,17 +1,41 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import NavigationLinks from './NavigationLinks';
 import { SocialLink } from './SocialLink';
 import './Navigation.scss';
 import { useSection } from '../context/SectionContext';
 import classNames from 'classnames';
+import { animated, useTransition } from 'react-spring';
 
 export const Navigation: FC = () => {
   const activeSection = useSection();
   const TopNavigation = activeSection?.c !== 'HOME';
 
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
+  });
+
+  const handleClick = () => {
+    setShowMobileNav((prev) => !prev);
+  };
+
+  const transitions = useTransition(showMobileNav, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  });
+
   return (
     <nav className={classNames({ nav: true, top: TopNavigation })}>
-      <div className="container">
+      <div className="container text-md-start text-center">
         <h1>
           <a href="/" className="text-white">
             Jay Alegria
@@ -22,8 +46,8 @@ export const Navigation: FC = () => {
             I'm a front-end <span className="text-underline">Web developer</span> from Philippines
           </p>
         )}
-
-        <NavigationLinks />
+        {!TopNavigation && <NavigationLinks />}
+        {TopNavigation && isDesktop && <NavigationLinks />}
         {!TopNavigation && (
           <div className="social-links mt-3">
             <SocialLink link="https://www.fiverr.com/jaylaurence" icon="bi-fiverr custom-icon s-icon" />
@@ -32,7 +56,27 @@ export const Navigation: FC = () => {
             <SocialLink link="https://www.linkedin.com/in/jay-laurence-alegria-1b0354196/" icon="bi-linkedin" />
           </div>
         )}
+        {TopNavigation && !isDesktop && (
+          <div
+            className="mobileNav-toggle"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            {showMobileNav && <i className="bi bi-x-square"></i>}
+            {!showMobileNav && <i className="bi  bi-menu-button-wide"></i>}
+          </div>
+        )}
       </div>
+      {showMobileNav &&
+        transitions(
+          (styles, item) =>
+            item && (
+              <animated.div style={styles} className="mobile-nav">
+                <NavigationLinks handleClick={handleClick} />
+              </animated.div>
+            ),
+        )}
     </nav>
   );
 };

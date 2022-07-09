@@ -12,6 +12,7 @@ export const PortfolioFilters: FC<Props> = ({ onFilter }) => {
       {PortfolioFilterList.map((filter) => (
         <button
           key={filter.name}
+          className="mb-3"
           onClick={() => {
             onFilter(filter.category);
           }}
