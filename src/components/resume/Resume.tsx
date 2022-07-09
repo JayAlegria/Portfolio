@@ -40,7 +40,7 @@ export const Resume: FC<Props> = ({ styles }) => {
             </div>
           </div>
         </div>
-        <div className="col-lg-5 offset-1 resume__column">
+        <div className="col-lg-5 offset-lg-1 resume__column">
           <div className="resume__group mb-5">
             <p className="h3">Professional Experience</p>
             <div className="resume__content ps-5">

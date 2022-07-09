@@ -122,7 +122,7 @@ export const Skills = [
     iconColor: 'text-teal',
   },
   {
-    name: 'Shopify Liquid',
+    name: 'Liquid',
     icon: 'bi-droplet',
     iconColor: 'text-blue',
   },

@@ -6,10 +6,10 @@ import me from '../../images/me.jpg';
 export const AboutIntro = () => {
   return (
     <div className="row mt-5 about__intro">
-      <div className="col-4">
+      <div className="col-lg-4">
         <img src={me} alt="Jay laurence Alegria" />
       </div>
-      <div className="col-8">
+      <div className="col-lg-8">
         <h3 className="text-primary">WEB DEVELOPER</h3>
         <p>Hello!</p>
         <p>

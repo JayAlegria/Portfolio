@@ -97,8 +97,12 @@ nav.top {
       flex-wrap: wrap;
       justify-content: center;
     }
-    & > .container {
-      background: colors.$bgClear;
+    &:not(.top) {
+      & > .container {
+        background: colors.$bgClear;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
     }
   }
 }

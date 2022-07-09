@@ -26,3 +26,25 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .portfolio-content {
+    display: block;
+    overflow-y: scroll;
+    padding: 80px 20px 20px;
+    &__row {
+      flex-direction: column-reverse;
+    }
+    &__screenshot {
+      width: 100%;
+      height: 400px;
+    }
+
+    &__info {
+      margin-bottom: 50px;
+      ul {
+        columns: 1;
+      }
+    }
+  }
+}

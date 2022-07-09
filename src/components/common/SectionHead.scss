@@ -1,6 +1,13 @@
-
 .section-title {
   h3 {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    h3 {
+      font-size: 25px;
+    }
   }
 }
