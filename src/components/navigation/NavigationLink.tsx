@@ -8,8 +8,9 @@ interface Props {
     y: number;
     opacity: number;
   };
+  handleClick?: () => void;
 }
-export const NavigationLink: FC<Props> = ({ title, entryAnimation }) => {
+export const NavigationLink: FC<Props> = ({ title, entryAnimation, handleClick }) => {
   const updateSectionDisplay = useUpdateSection();
   const activeSection = useSection();
   return (
@@ -17,6 +18,7 @@ export const NavigationLink: FC<Props> = ({ title, entryAnimation }) => {
       <a
         className="nav-link pb-2 px-0 py-0"
         onClick={() => {
+          handleClick ? handleClick() : null;
           updateSectionDisplay(title.toUpperCase(), entryAnimation);
         }}
       >

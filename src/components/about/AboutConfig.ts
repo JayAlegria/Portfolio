@@ -1,5 +1,9 @@
 export const AboutMe = [
   {
+    title: 'Years of Experience',
+    description: '3 years',
+  },
+  {
     title: 'Birthday',
     description: '21 September 1997',
   },
@@ -30,10 +34,6 @@ export const AboutMe = [
   {
     title: 'Birthday',
     description: '21 September 2021',
-  },
-  {
-    title: 'Years of Experience',
-    description: '3 years',
   },
 ];
 
