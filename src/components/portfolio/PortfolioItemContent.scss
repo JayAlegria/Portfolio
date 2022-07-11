@@ -6,9 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: colors.$black;
 
   &__screenshot {
-    width: 680px;
+    width: auto;
     height: 90vh;
     background-size: cover;
     background-position: top;

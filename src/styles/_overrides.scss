@@ -14,6 +14,7 @@ $custom-colors: (
   'green': colors.$green,
   'teal': colors.$teal,
   'coral': colors.$coral,
+  'clear': colors.$bgClear,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
