@@ -1,0 +1,31 @@
+@use './colors' as colors;
+
+form {
+  .form-control {
+    background-color: colors.$bgClear;
+    border: none;
+    border-radius: 0;
+    color: colors.$white;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input[type='submit'] {
+    font-weight: 700;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    input[type='submit'] {
+      width: 100%;
+    }
+  }
+}

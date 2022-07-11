@@ -18,7 +18,7 @@ export const NavigationLink: FC<Props> = ({ title, entryAnimation, handleClick }
       <a
         className="nav-link pb-2 px-0 py-0"
         onClick={() => {
-          handleClick ? handleClick() : null;
+          handleClick && handleClick();
           updateSectionDisplay(title.toUpperCase(), entryAnimation);
         }}
       >

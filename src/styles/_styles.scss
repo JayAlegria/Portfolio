@@ -84,6 +84,12 @@ button {
   }
 }
 
+.bg-clear {
+  background: colors.$bgClear !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
 .vertical-line {
   position: relative;
 
