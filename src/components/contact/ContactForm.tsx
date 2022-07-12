@@ -35,17 +35,17 @@ export const ContactForm = () => {
         <Form>
           <div className="row">
             <div className="col-md-6 form-group">
-              <FormTextField name="name" placeHolder="Your Name" />
+              <FormTextField name="name" label="Your Name" />
             </div>
             <div className="col-md-6 form-group">
-              <FormTextField name="email" placeHolder="Your Your Email" />
+              <FormTextField name="email" label="Your Your Email" />
             </div>
           </div>
           <div className="form-group">
-            <FormTextField name="subject" placeHolder="Subject" />
+            <FormTextField name="subject" label="Subject" />
           </div>
           <div className="form-group">
-            <FormTextAreaField name="message" placeHolder="Message" />
+            <FormTextAreaField name="message" label="Message" />
           </div>
           <div className="form-group">
             <input value="Send" type="submit" className="btn d-lg-inline-block d-block btn-green" />
