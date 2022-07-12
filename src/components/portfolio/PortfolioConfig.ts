@@ -34,7 +34,7 @@ export const PortfolioItems: PortfolioItem[] = [
     url: 'https://brandcaptain.io/',
     techStack: ['React js', 'Gatsby Js', 'Typescript'],
     description:
-      'Developed the landing page and help with the front-end of the platform dashboard. This is the first project I handled using ReactJs and Typescript. It introduced to me the core concept of react such as states, props, hooks and etc. With this project I also learned the importance of version control and how to use git and github',
+      'Developed the landing page and help with the front-end of the platform dashboard. This is the first project I handled using ReactJs and Typescript. It introduced me the core concept of react such as states, props, hooks and etc. With this project I also learned the importance of version control and how to use git and github',
   },
   {
     name: 'Avano',
