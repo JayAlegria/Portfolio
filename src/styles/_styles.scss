@@ -34,9 +34,18 @@ body {
       background: transparent;
     }
   }
+
+  &.home {
+    .inner {
+      overflow-y: hidden;
+    }
+  }
 }
 
 // global style
+a {
+  color: inherit;
+}
 a,
 button {
   &:focus,
@@ -73,6 +82,12 @@ button {
     background: colors.$primary;
     color: colors.$white;
   }
+}
+
+.bg-clear {
+  background: colors.$bgClear !important;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .vertical-line {

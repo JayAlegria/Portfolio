@@ -1,0 +1,12 @@
+.contact-details {
+  word-break: break-word;
+  .contact-icons {
+    font-size: 40px;
+  }
+}
+
+.contact-socials {
+  a:not(:first-child) {
+    margin-left: 10px;
+  }
+}
