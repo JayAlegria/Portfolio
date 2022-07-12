@@ -5,7 +5,7 @@ import { Resume } from './resume/Resume';
 import { useTransition } from 'react-spring';
 import { Services } from './services/Services';
 import { Portfolio } from './portfolio/Portfolio';
-import { Contact } from './contact/contact';
+import { Contact } from './contact/Contact';
 
 export const SmartSectionDisplay: FC = () => {
   const activeSection = useSection();
