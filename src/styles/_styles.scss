@@ -79,7 +79,7 @@ button {
   letter-spacing: 2px;
 
   &:hover {
-    background: colors.$primary;
+    background: rgba(153, 153, 153, 0.078);
     color: colors.$white;
   }
 }

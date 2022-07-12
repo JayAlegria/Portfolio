@@ -13,10 +13,10 @@ export const FormContainer: FC<FormType> = ({ initialValues, onSubmit, validatio
   return (
     <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
       <Form>
-        <FormTextField name="name" placeHolder="Your Name" />
-        <FormTextField name="email" placeHolder="Your Your Email" />
-        <FormTextField name="subject" placeHolder="Subject" />
-        <FormTextField name="message" placeHolder="Message" />
+        <FormTextField name="name" label="Your Name" />
+        <FormTextField name="email" label="Your Your Email" />
+        <FormTextField name="subject" label="Subject" />
+        <FormTextField name="message" label="Message" />
         <input type="submit" className="btn btn-green text-black" />
       </Form>
     </Formik>

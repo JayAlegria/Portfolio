@@ -4,13 +4,13 @@ import { FormErrorMessage } from './FormErrorMessage';
 
 interface Props {
   name: string;
-  placeHolder?: string;
+  label?: string;
 }
 
-export const FormTextAreaField: FC<Props> = ({ name, placeHolder, ...rest }) => {
+export const FormTextAreaField: FC<Props> = ({ name, label, ...rest }) => {
   return (
     <>
-      <Field className="form-control" as="textarea" name={name} id={name} placeHolder={placeHolder} {...rest} />
+      <Field className="form-control" as="textarea" name={name} id={name} placeholder={label} {...rest} />
       <FormErrorMessage name={name} />
     </>
   );
