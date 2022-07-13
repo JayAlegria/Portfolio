@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as Yup from 'yup';
 import { Form, Formik } from 'formik';
 import { FormTextField } from '../forms/FormTextField';
 import { FormTextAreaField } from '../forms/FormTextAreaField';
+import emailjs from '@emailjs/browser';
+import { Spinner } from 'react-bootstrap';
+import { FormFeedbackToast } from '../forms/FormFeedbackToast';
 
 const initialValues = {
   name: '',
   email: '',
   subject: '',
   message: '',
-};
-
-const onSubmit = (values: {}, onSubmit: { resetForm: () => void }) => {
-  console.log(values);
-  onSubmit.resetForm();
 };
 
 const validationSchema = Yup.object({
@@ -29,6 +27,30 @@ const validationSchema = Yup.object({
 });
 
 export const ContactForm = () => {
+  const [isSending, setIsSending] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
+
+  const onSubmit = (values: {}, onSubmit: { resetForm: () => void }) => {
+    setIsSending(true);
+    emailjs
+      .send('service_ql4gobi', 'template_qqqrt1e', values, 'RPzS4wXvcgFeLsAfN')
+      .then((res) => {
+        setIsSending(false);
+        setShowFeedback(true);
+        setEmailSent(true);
+      })
+      .catch((err) => {
+        setIsSending(false);
+        setShowFeedback(false);
+        setEmailSent(false);
+      });
+    onSubmit.resetForm();
+  };
+
+  const closeToast = () => {
+    setShowFeedback(false);
+  };
   return (
     <div className="mt-5 p-4 bg-clear">
       <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
@@ -48,10 +70,36 @@ export const ContactForm = () => {
             <FormTextAreaField name="message" label="Message" />
           </div>
           <div className="form-group">
-            <input value="Send" type="submit" className="btn d-lg-inline-block d-block btn-green" />
+            <button type="submit" className="btn d-lg-inline-block d-block btn-green">
+              {isSending && (
+                <>
+                  <span>Sending </span>
+                  <Spinner animation="border" size="sm" />
+                </>
+              )}
+              {!isSending && <strong>Send</strong>}
+            </button>
           </div>
         </Form>
       </Formik>
+      {emailSent && (
+        <FormFeedbackToast
+          show={showFeedback}
+          heading="Email sent successfully"
+          body="Thank you for your interest. I will get back to you as soon as I can"
+          variant="success"
+          onClose={closeToast}
+        />
+      )}
+      {!emailSent && (
+        <FormFeedbackToast
+          show={showFeedback}
+          heading="Email not sent!"
+          body="Email not sent for some reason. You can send email here alegriajaylaurence@gmail.com"
+          variant="failed"
+          onClose={closeToast}
+        />
+      )}
     </div>
   );
 };
