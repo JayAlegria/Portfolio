@@ -9,16 +9,23 @@ import { animated, useTransition } from 'react-spring';
 export const Navigation: FC = () => {
   const activeSection = useSection();
   const TopNavigation = activeSection?.c !== 'HOME';
-
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
-
   const [showMobileNav, setShowMobileNav] = useState(false);
 
+  const hasWindow = typeof window !== 'undefined';
+
+  const getWindowWidth = () => {
+    return hasWindow ? window.innerWidth : 0;
+  };
+  const [isDesktop, setDesktop] = useState(getWindowWidth() > 768);
+
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 768);
+    setDesktop(getWindowWidth() > 768);
   };
 
   useEffect(() => {
+    if (!hasWindow) {
+      return;
+    }
     window.addEventListener('resize', updateMedia);
     return () => window.removeEventListener('resize', updateMedia);
   });
