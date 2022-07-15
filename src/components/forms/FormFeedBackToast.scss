@@ -1,0 +1,14 @@
+@use '../../styles/colors' as colors;
+.toast {
+  background: colors.$bgClear;
+  &.success {
+    .toast-header {
+      background: rgba(0, 128, 0, 0.5);
+    }
+  }
+  &.failed {
+    .toast-header {
+      background: rgba(255, 0, 0, 0.5);
+    }
+  }
+}
