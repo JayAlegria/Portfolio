@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Toast, ToastContainer } from 'react-bootstrap';
-import './FormFeedbackToast.scss';
+import './FormFeedBackToast.scss';
 
 interface Props {
   heading: string;
