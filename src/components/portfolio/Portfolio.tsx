@@ -35,7 +35,7 @@ export const Portfolio: FC<Props> = ({ styles }) => {
         I built all the website below, except my portfolio, under the supervision of{' '}
         <a href="https://www.dotdigitalph.com/">Dot Digital Philippines</a> agency
       </small>
-      <PortfolioFilters onFilter={onFilter} />
+      <PortfolioFilters onFilter={onFilter} activeCat={portfolioFilter} />
       <div className="portfolio__row row my-5">
         <Gallery options={options}>
           {filteredPortfolio.map((portfolioData) => (
