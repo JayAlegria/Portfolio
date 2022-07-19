@@ -16,7 +16,7 @@ export const Resume: FC<Props> = ({ styles }) => {
           <div className="resume__group mb-5">
             <p className="h3">Education</p>
             <div className="resume__content ps-5">
-              <p className="title mb-2">BS COMPUTER ENGINEERING</p>
+              <p className="title mb-2 h3">BS COMPUTER ENGINEERING</p>
               <span className="year">2014-2019</span>
               <ul className="mt-4">
                 <li>Colegio De Montalban</li>
@@ -26,13 +26,13 @@ export const Resume: FC<Props> = ({ styles }) => {
           </div>
           <div className="resume__group mb-5">
             <div className="resume__content ps-5">
-              <p className="title mb-2">WEB DEVELOPMENT</p>
+              <p className="title mb-2 h3">WEB DEVELOPMENT</p>
               <span className="year">MAY 2019</span>
               <ul className="mt-4">
                 <li>TESDA Training for work scholarship program</li>
                 <li>88 North East Venture Corporation</li>
               </ul>
-              <p className="title mb-2">WEB DESIGN</p>
+              <p className="title mb-2 h3">WEB DESIGN</p>
               <span className="year">JUNE 2019</span>
               <ul className="mt-4">
                 <li>TESDA Training for work scholarship program</li>
@@ -45,7 +45,7 @@ export const Resume: FC<Props> = ({ styles }) => {
           <div className="resume__group mb-5">
             <p className="h3">Professional Experience</p>
             <div className="resume__content ps-5">
-              <p className="title mb-0">WEB DEVELOPER</p>
+              <p className="title mb-2 h3">WEB DEVELOPER</p>
               <span className="year">2019-present</span>
               <p className="mt-4">
                 - Help our company developed a software that will let the client and employee interact directly. In this
@@ -72,9 +72,9 @@ export const Resume: FC<Props> = ({ styles }) => {
           </div>
           <div className="resume__group mb-5">
             <div className="resume__content ps-5">
-              <p className="title mb-2">FREELANCE WEB DEVELOPER</p>
+              <p className="title mb-2 h3">FREELANCE WEB DEVELOPER</p>
               <span className="year">2020-present</span>
-              <p>- Maintain and extend functionality of client's website</p>
+              <p className="mt-4">- Maintain and extend functionality of client's website</p>
               <p>-- I only accepts job related to wordpress in my freelancing journey</p>
               <ul>
                 <li>

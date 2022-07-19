@@ -1,5 +1,8 @@
 @use '../../styles/colors' as colors;
 .services {
+  .h5 {
+    font-weight: 600;
+  }
   &__item {
     background: colors.$bgClear;
     transition: background 0.4s ease;
