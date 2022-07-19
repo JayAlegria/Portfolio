@@ -1,6 +1,6 @@
 @use '../../styles/colors' as colors;
 .toast {
-  background: colors.$bgClear;
+  background: colors.$black;
   &.success {
     .toast-header {
       background: rgba(0, 128, 0, 0.5);
