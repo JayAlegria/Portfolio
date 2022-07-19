@@ -1,7 +1,7 @@
 @use './colors' as colors;
 body {
   background-color: #040404;
-  color: #ffff;
+  color: colors.$white;
   position: relative;
   background: transparent;
 

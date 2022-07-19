@@ -1,6 +1,6 @@
 import React, { ReactElement, ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
-import me from '../../images/me.jpg';
+import ogImage from '../../images/og-image.png';
 
 import '../../styles/_main.scss';
 import { useSection } from '../context/SectionContext';
@@ -26,7 +26,7 @@ function Layout({ children }: childrenType) {
           content="I am Jay, a web developer who has expertise in front end development, I commonly build websites using Wordpress, Shopify or React js."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={me} />
+        <meta property="og:image" content={ogImage} />
       </Helmet>
       <div className={`page-container ${pageClass?.c.toLowerCase()}`}>
         <div className="inner">{children}</div>
