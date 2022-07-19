@@ -1,3 +1,4 @@
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React, { FC } from 'react';
 
 interface Props {
@@ -6,8 +7,8 @@ interface Props {
 }
 export const SocialLink: FC<Props> = ({ link, icon }) => {
   return (
-    <a href={link} target="blank" className="social-icon">
+    <OutboundLink href={link} target="blank" className="social-icon">
       <i className={`bi ${icon}`}></i>
-    </a>
+    </OutboundLink>
   );
 };

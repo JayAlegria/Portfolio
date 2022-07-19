@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { SectionWrapper } from '../layout/SectionWrapper';
 import { SectionHead } from '../common/SectionHead';
 import './Resume.scss';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 interface Props {
   styles: {};
@@ -50,7 +51,7 @@ export const Resume: FC<Props> = ({ styles }) => {
                 - Help our company developed a software that will let the client and employee interact directly. In this
                 project I developed the landing page and help with the front-end in the dashboard using ReactJS and
                 React Typescript.
-                <br /> Website:<a href="https://brandcaptain.io/"> Brandcaptain.io</a>
+                <br /> Website:<OutboundLink href="https://brandcaptain.io/"> Brandcaptain.io</OutboundLink>
               </p>
               <p>- Develop, Maintain or extend functionality of our client's website</p>
               <p>- Maintain and extend functionality of our company website</p>
@@ -62,9 +63,9 @@ export const Resume: FC<Props> = ({ styles }) => {
                 <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
                 <li>Dot digital Philippines</li>
                 <li>
-                  <a target="_blank" href="https://www.dotdigitalph.com/">
+                  <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">
                     dotdigitalph.com
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
             </div>
@@ -77,9 +78,9 @@ export const Resume: FC<Props> = ({ styles }) => {
               <p>-- I only accepts job related to wordpress in my freelancing journey</p>
               <ul>
                 <li>
-                  <a target="_blank" href="https://www.fiverr.com/jaylaurence">
+                  <OutboundLink target="_blank" href="https://www.fiverr.com/jaylaurence">
                     Fiverr
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
             </div>

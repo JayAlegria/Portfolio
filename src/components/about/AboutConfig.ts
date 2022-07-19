@@ -31,10 +31,6 @@ export const AboutMe = [
     title: 'Degree',
     description: 'Bachelor',
   },
-  {
-    title: 'Birthday',
-    description: '21 September 2021',
-  },
 ];
 
 export const Interest = [

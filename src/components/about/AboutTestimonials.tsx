@@ -3,6 +3,7 @@ import { Testimonials } from './AboutConfig';
 import Slider from 'react-slick';
 
 import './AboutTestimonials.scss';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 export const AboutTestimonials = () => {
   const settings = {
     dots: true,
@@ -41,9 +42,9 @@ export const AboutTestimonials = () => {
                     <span className="bi bi-person-fill"></span>
                     <p className="mb-0">{testimonial.name}</p>
                     {testimonial.src && (
-                      <a className="text-muted" href={testimonial.link}>
+                      <OutboundLink className="text-muted" href={testimonial.link}>
                         {testimonial.src}
-                      </a>
+                      </OutboundLink>
                     )}
                   </div>
                 </div>

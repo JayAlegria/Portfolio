@@ -6,6 +6,7 @@ import 'photoswipe/dist/photoswipe.css';
 import { PortfolioFilters } from './PortfolioFilters';
 import { PortfolioBox } from './PortfolioBox';
 import { PortfolioItems, PortfolioCategory } from './PortfolioConfig';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 interface Props {
   styles: {};
@@ -33,9 +34,9 @@ export const Portfolio: FC<Props> = ({ styles }) => {
       <SectionHead title="Portfolio" subtitle="My Works" />
       <small className="text-muted d-block col-lg-4">
         I built all the website below, except my portfolio, under the supervision of{' '}
-        <a href="https://www.dotdigitalph.com/">Dot Digital Philippines</a> agency
+        <OutboundLink href="https://www.dotdigitalph.com/">Dot Digital Philippines</OutboundLink> agency
       </small>
-      <PortfolioFilters onFilter={onFilter} />
+      <PortfolioFilters onFilter={onFilter} activeCat={portfolioFilter} />
       <div className="portfolio__row row my-5">
         <Gallery options={options}>
           {filteredPortfolio.map((portfolioData) => (
