@@ -7,7 +7,7 @@ import { PortfolioFilters } from './PortfolioFilters';
 import { PortfolioBox } from './PortfolioBox';
 import { PortfolioItems, PortfolioCategory } from './PortfolioConfig';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
-
+import './Portfolio.scss';
 interface Props {
   styles: {};
 }
