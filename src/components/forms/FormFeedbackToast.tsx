@@ -12,7 +12,7 @@ interface Props {
 export const FormFeedbackToast: FC<Props> = ({ variant, show, heading, body, onClose }) => {
   return (
     <ToastContainer position="middle-center" className="p-3">
-      <Toast className={`toast-notif ${variant}`} onClose={onClose} show={true} delay={3000}>
+      <Toast className={`toast-notif ${variant}`} onClose={onClose} show={show} delay={3000}>
         <Toast.Header>
           <strong className="me-auto text-white">{heading}</strong>
         </Toast.Header>
