@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import './PortfolioItemContent.scss';
 import { PortfolioItem } from './PortfolioConfig';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 interface Props {
   project: PortfolioItem;
 }
@@ -24,9 +25,9 @@ export const PortfolioItemContent: FC<Props> = ({ project }) => {
               </p>
               <p className="category">
                 <b className="me-2">Link: </b>{' '}
-                <a target="_blank" href={project.url}>
+                <OutboundLink target="_blank" href={project.url}>
                   {project.url}
-                </a>
+                </OutboundLink>
               </p>
               <p className="h4">Tech Stack</p>
               <ul className="tech-stack">
