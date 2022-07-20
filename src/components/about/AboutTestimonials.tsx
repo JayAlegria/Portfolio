@@ -13,6 +13,8 @@ export const AboutTestimonials = () => {
     slidesToScroll: 3,
     arrows: false,
     adaptiveHeight: true,
+    pauseOnHover: true,
+    pauseOnFocus: true,
     responsive: [
       {
         breakpoint: 768,
