@@ -144,120 +144,51 @@ export const Testimonials = [
     name: 'ghenderson1',
     qoute:
       'Very efficient and willing to figure out things to help me. Very responsive to all messages. Very easy to work with highly suggest using him for your website needs. I can’t say enough about his quality of work and how quickly he gets things done.',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
   {
     name: 'zain99201',
     qoute:
       'Jay is the man! 10/10 very responsive. Be very detailed on what you are looking for and he will provide you the best quality work. There is no waiting around for him either. He is quick. Will be using your services again. Thanks a ton.',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
   {
     name: 'airliquid',
     qoute:
       'Great job as always! Friendly and Professional. He explains even a small basic stuff step by step to understand. Highly Recommended!',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
   {
     name: 'dashaye',
     qoute: 'Answered all my questions, completed the job in a timely manner. Easy process with this seller!',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
   {
     name: 'jellyjan',
     qoute: 'Exactly what I needed! Thank you',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
   {
     name: 'scruggslife',
     qoute: 'Awesome communications',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
   {
     name: 'steveairedale',
     qoute: 'Jay , always goes out of his way to make Sure he is delivering his best work to me. Jay is the best!',
-    link: 'https://www.fiverr.com/jaylaurence/add-pages-menu-categories-on-your-wordpress-website',
+    link: 'https://www.fiverr.com/jaylaurence',
     src: 'fiverr',
   },
 ];
 
-export const ExperienceApp = [
-  {
-    title: 'Wordpress',
-  },
-  {
-    title: 'Shopify',
-  },
-  {
-    title: 'Gatsby JS',
-  },
-  {
-    title: 'GraphQL',
-  },
-  {
-    title: 'Cpanel',
-  },
-  {
-    title: 'Mailchimp',
-  },
-  {
-    title: 'Godaddy',
-  },
-  {
-    title: 'Namecheap',
-  },
-  {
-    title: 'Adobe Illustrator',
-  },
-  {
-    title: 'Adobe XD',
-  },
-  {
-    title: 'Figma',
-  },
-  {
-    title: 'Filezilla',
-  },
-  {
-    title: 'Divi',
-  },
-  {
-    title: 'Elementor',
-  },
-  {
-    title: 'WPBakery',
-  },
-  {
-    title: 'Gutenberg',
-  },
+export const ExperienceApp = ['Git', 'Github', 'Azure', 'Jira', 'Wordpress', 'Shopify', 'Gatsby JS', 'GraphQL', 'Cpanel', 'Mailchimp', 'Godaddy', 'Namecheap', 'Adobe Illustrator', 'Adobe XD', 'Figma', 'Filezilla', 'Divi', 'Elementor', 'WPBakery', 'Gutenberg',
 ];
 
-export const Plugins = [
-  {
-    title: 'ACF PRO',
-  },
-  {
-    title: 'CPT UI',
-  },
-  {
-    title: 'Woocommerce',
-  },
-  {
-    title: 'Contactform 7',
-  },
-  {
-    title: 'Yoast SEO',
-  },
-  {
-    title: 'Memberpress',
-  },
-  {
-    title: 'Itheme Security',
-  },
+export const Plugins = ['ACF PRO', 'CPT UI', 'Woocommerce', 'Contactform 7', 'Yoast SEO', 'Memberpress', 'Itheme Security',
 ];

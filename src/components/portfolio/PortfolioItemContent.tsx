@@ -23,12 +23,12 @@ export const PortfolioItemContent: FC<Props> = ({ project }) => {
               <p className="category">
                 <b className="me-2">Category: </b> {project.category.toString()}
               </p>
-              <p className="category">
+              {project.url && <p className="category">
                 <b className="me-2">Link: </b>{' '}
                 <OutboundLink target="_blank" href={project.url}>
                   {project.url}
                 </OutboundLink>
-              </p>
+              </p>}
               <p className="h4">Tech Stack</p>
               <ul className="tech-stack">
                 {project.techStack?.map((stack) => (
