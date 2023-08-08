@@ -3,6 +3,7 @@ import { SectionWrapper } from '../layout/SectionWrapper';
 import { SectionHead } from '../common/SectionHead';
 import './Resume.scss';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import { Experience } from './experience/Experience';
 
 interface Props {
   styles: {};
@@ -42,49 +43,65 @@ export const Resume: FC<Props> = ({ styles }) => {
           </div>
         </div>
         <div className="col-lg-5 offset-lg-1 resume__column">
-          <div className="resume__group mb-5">
-            <p className="h3">Professional Experience</p>
-            <div className="resume__content ps-5">
-              <p className="title mb-2 h3">WEB DEVELOPER</p>
-              <span className="year">2019-present</span>
-              <p className="mt-4">
-                - Help our company developed a software that will let the client and employee interact directly. In this
-                project I developed the landing page and help with the front-end in the dashboard using ReactJS and
-                React Typescript.
-                <br /> Website:<OutboundLink href="https://brandcaptain.io/"> Brandcaptain.io</OutboundLink>
-              </p>
-              <p>- Develop, Maintain or extend functionality of our client's website</p>
-              <p>- Maintain and extend functionality of our company website</p>
-              <p>
-                - Handle all stuff regarding to website development <br /> (
-                <i> except web design and content writing </i>)
-              </p>
-              <ul>
-                <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
-                <li>Dot digital Philippines</li>
-                <li>
-                  <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">
-                    dotdigitalph.com
-                  </OutboundLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="resume__group mb-5">
-            <div className="resume__content ps-5">
-              <p className="title mb-2 h3">FREELANCE WEB DEVELOPER</p>
-              <span className="year">2020-present</span>
-              <p className="mt-4">- Maintain and extend functionality of client's website</p>
-              <p>-- I only accepts job related to wordpress in my freelancing journey</p>
-              <ul>
-                <li>
-                  <OutboundLink target="_blank" href="https://www.fiverr.com/jaylaurence">
-                    Fiverr
-                  </OutboundLink>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <p className="h3">Professional Experience</p>
+          <Experience details={{ position: "Software Engineer", company: "Vesta", year: "2022-present" }}>
+            <p>Vesta is a global transaction guarantee company for online purchases, delivering unparalleled approval rates and a frictionless customer experience while eliminating chargebacks and other forms of digital fraud.</p>
+            <p>Works with the team to maintain and add features to the Internal and Customer Dashboards</p>
+            <ul>
+              <li>
+                <OutboundLink target="_blank" href="https://www.vesta.io/about-vesta">
+                  vesta.io
+                </OutboundLink>
+              </li>
+            </ul>
+          </Experience>
+          <Experience details={{ position: "Freelance Web Developer", year: "2022-present", company: "Dot Digital Philippines" }}>
+            <p>
+              Handle all stuff regarding to website development <br /> (
+              <i> except web design and content writing </i>)
+            </p>
+            <ul>
+              <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
+              <li>
+                <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">
+                  dotdigitalph.com
+                </OutboundLink>
+              </li>
+            </ul>
+          </Experience>
+          <Experience details={{ position: "Web Developer", year: "2019-2022", company: "Dot Digital Philippines" }} >
+            <p className="mt-4">
+              Help our company developed a software that will let the client and employee interact directly. In this
+              project I developed the landing page and help with the front-end in the dashboard using ReactJS and
+              React Typescript.
+              <br /> Website:<OutboundLink href="https://brandcaptain.io/"> Brandcaptain.io</OutboundLink>
+            </p>
+            <p>Develop, Maintain or extend functionality of our client's website</p>
+            <p>Maintain and extend functionality of our company website</p>
+            <p>
+              Handle all stuff regarding to website development <br /> (
+              <i> except web design and content writing </i>)
+            </p>
+            <ul>
+              <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
+              <li>
+                <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">
+                  dotdigitalph.com
+                </OutboundLink>
+              </li>
+            </ul>
+          </Experience>
+          <Experience details={{ position: "Freelance Web Developer", year: "2020-2022", company: "Fiverr" }}>
+            <p className="mt-4">Maintain and extend functionality of client's website</p>
+            <small>-I only accepts job related to wordpress in my Fiverr freelancing journey</small>
+            <ul>
+              <li>
+                <OutboundLink target="_blank" href="https://www.fiverr.com/jaylaurence">
+                  Fiverr
+                </OutboundLink>
+              </li>
+            </ul>
+          </Experience>
         </div>
       </div>
     </SectionWrapper>

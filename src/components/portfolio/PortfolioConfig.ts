@@ -24,14 +24,60 @@ import thebarn from '../../images/projects/thebarn.png';
 import thebarnThumb from '../../images/projects/thumbnail/thebarn.jpg';
 import washington from '../../images/projects/washington.png';
 import washingtonThumb from '../../images/projects/thumbnail/washington.jpg';
+import farmfluence from "../../images/projects/farmfluence.png";
+import farmfluenceThumb from "../../images/projects/thumbnail/farmfluence.jpg";
+import adgarlic from "../../images/projects/adgarlic.jpg";
+import adgarlicThumb from "../../images/projects/thumbnail/adgarlic.jpg";
+import cargo from "../../images/projects/cargo.png";
+import cargoThumb from "../../images/projects/thumbnail/cargo.jpg";
+
+export interface PortfolioItem {
+  name: string;
+  thumbnail: string;
+  fullImage: string;
+  category: string[];
+  url?: string;
+  techStack?: string[];
+  plugins?: string[];
+  description: string;
+}
 
 export const PortfolioItems: PortfolioItem[] = [
+  {
+    name: 'Adgarlic',
+    thumbnail: adgarlicThumb,
+    fullImage: adgarlic,
+    category: ['wordpress'],
+    url: 'https://adgarlic.com/',
+    techStack: ['Wordpress', 'SCSS', 'Greensocks Animation', 'Javascript', 'CSS'],
+    description:
+      'Transform design into fully functional wordpress website.',
+  },
+  {
+    name: 'Farmfluence',
+    thumbnail: farmfluenceThumb,
+    fullImage: farmfluence,
+    category: ['shopify'],
+    url: 'https://farmfluence.co/',
+    techStack: ['Shopify', 'Liquid', 'Javascript', 'CSS'],
+    description:
+      'E-commerce website built with customized shopify theme.',
+  },
+  {
+    name: 'Cargo Clothing',
+    thumbnail: cargoThumb,
+    fullImage: cargo,
+    category: ['shopify'],
+    url: 'https://www.cargoclothing.com/',
+    techStack: ['Shopify', 'Liquid', 'Javascript', 'CSS'],
+    description:
+      'E-commerce website built with customized shopify theme.',
+  },
   {
     name: 'BrandCaptain',
     thumbnail: brandCaptainThumb,
     fullImage: brandCaptain,
     category: ['react'],
-    url: 'https://brandcaptain.io/',
     techStack: ['React js', 'Gatsby Js', 'Typescript'],
     description:
       'Developed the landing page and help with the front-end of the platform dashboard. This is the first project I handled using ReactJs and Typescript. It introduced me the core concept of react such as states, props, hooks and etc. With this project I also learned the importance of version control and how to use git and github',
@@ -187,14 +233,3 @@ export const PortfolioFilterList: PortfolioFilterList[] = [
     category: 'shopify',
   },
 ];
-
-export interface PortfolioItem {
-  name: string;
-  thumbnail: string;
-  fullImage: string;
-  category: string[];
-  url: string;
-  techStack?: string[];
-  plugins?: string[];
-  description: string;
-}
