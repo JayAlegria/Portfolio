@@ -1,7 +1,7 @@
 export const AboutMe = [
   {
     title: 'Years of Experience',
-    description: '3 years',
+    description: '4 years',
   },
   {
     title: 'Birthday',
@@ -9,7 +9,7 @@ export const AboutMe = [
   },
   {
     title: 'Website',
-    description: 'jayworks.xyz',
+    description: 'jayworks.netlify.app',
   },
   {
     title: 'Phone',
@@ -25,7 +25,7 @@ export const AboutMe = [
   },
   {
     title: 'Age',
-    description: '24',
+    description: '26',
   },
   {
     title: 'Degree',
