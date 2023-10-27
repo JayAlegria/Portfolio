@@ -87,7 +87,6 @@ export const PortfolioItems: PortfolioItem[] = [
     thumbnail: avanoThumb,
     fullImage: avano,
     category: ['wordpress'],
-    url: 'https://avano.us',
     techStack: ['Wordpress', 'PHP', 'SCSS', 'JQuery', 'Javascript', 'Bootstrap'],
     plugins: ['Contact Form 7', 'Itheme Security', 'ACF', 'CPT UI'],
     description:
@@ -98,7 +97,6 @@ export const PortfolioItems: PortfolioItem[] = [
     thumbnail: portfolioThumb,
     fullImage: portfolio,
     category: ['react'],
-    url: '#',
     techStack: ['GatsbyJs', 'React', 'Typescript', 'SCSS', 'Bootstrap'],
     description:
       'This portfolio is built with gatsby js and typescript. I created this portfolio to practice gatsby, reactjs and to have deep understanding with bootstrap theming using scss',
@@ -172,7 +170,6 @@ export const PortfolioItems: PortfolioItem[] = [
     category: ['wordpress'],
     plugins: ['Contact Form 7', 'Itheme Security', 'ACF', 'CPT UI'],
     techStack: ['Wordpress', 'PHP', 'SCSS', 'JQuery', 'Javascript'],
-    url: 'https://clientservices.dotdigitalph.com/raycreate/',
     description: 'Transform design into fully functional wordpress website. ',
   },
   {
@@ -182,7 +179,6 @@ export const PortfolioItems: PortfolioItem[] = [
     category: ['wordpress'],
     plugins: ['Contact Form 7', 'Itheme Security', 'ACF', 'CPT UI'],
     techStack: ['Wordpress', 'PHP', 'SCSS', 'JQuery', 'Javascript'],
-    url: 'https://clientservices.dotdigitalph.com/eventspace/',
     description: 'Transform design into fully functional wordpress website.',
   },
   {
