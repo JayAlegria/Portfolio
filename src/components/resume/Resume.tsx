@@ -13,47 +13,17 @@ export const Resume: FC<Props> = ({ styles }) => {
     <SectionWrapper name="resume" styles={styles}>
       <SectionHead title="RESUME" subtitle="CHECK MY RESUME" />
       <div className="mt-5 row resume__row">
-        <div className="col-lg-6 resume__column">
-          <div className="resume__group mb-5">
-            <p className="h3">Education</p>
-            <div className="resume__content ps-5">
-              <p className="title mb-2 h3">BS COMPUTER ENGINEERING</p>
-              <span className="year">2014-2019</span>
-              <ul className="mt-4">
-                <li>Colegio De Montalban</li>
-                <li>Rodriguez. Rizal, Philippines</li>
-              </ul>
-            </div>
-          </div>
-          <div className="resume__group mb-5">
-            <div className="resume__content ps-5">
-              <p className="title mb-2 h3">WEB DEVELOPMENT</p>
-              <span className="year">MAY 2019</span>
-              <ul className="mt-4">
-                <li>TESDA Training for work scholarship program</li>
-                <li>88 North East Venture Corporation</li>
-              </ul>
-              <p className="title mb-2 h3">WEB DESIGN</p>
-              <span className="year">JUNE 2019</span>
-              <ul className="mt-4">
-                <li>TESDA Training for work scholarship program</li>
-                <li>88 North East Venture Corporation</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-5 offset-lg-1 resume__column">
+        <div className="col-lg-5 resume__column">
           <p className="h3">Professional Experience</p>
           <Experience details={{ position: "Software Engineer", company: "Vesta", year: "2022-present" }}>
             <p>Vesta is a global transaction guarantee company for online purchases, delivering unparalleled approval rates and a frictionless customer experience while eliminating chargebacks and other forms of digital fraud.</p>
             <p>Works with the team to maintain and add features to the Internal and Customer Dashboards</p>
             <ul>
-              <li>
-                <OutboundLink target="_blank" href="https://www.vesta.io/about-vesta">
-                  vesta.io
-                </OutboundLink>
-              </li>
+              <li>React Js</li>
+              <li>Next Js</li>
+              <li>Git/Azure/Jira</li>
             </ul>
+            <OutboundLink target="_blank" href="https://www.vesta.io/about-vesta">vesta.io</OutboundLink>
           </Experience>
           <Experience details={{ position: "Freelance Web Developer", year: "2022-present", company: "Dot Digital Philippines" }}>
             <p>
@@ -61,13 +31,14 @@ export const Resume: FC<Props> = ({ styles }) => {
               <i> except web design and content writing </i>)
             </p>
             <ul>
-              <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
-              <li>
-                <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">
-                  dotdigitalph.com
-                </OutboundLink>
-              </li>
+              <li>Wordpress/Shopify Development</li>
+              <li>Bootstrap/Tailwind</li>
+              <li>PHP</li>
+              <li>SCSS</li>
+              <li>Git/Github</li>
             </ul>
+            <p>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</p>
+            <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">dotdigitalph.com</OutboundLink>
           </Experience>
           <Experience details={{ position: "Web Developer", year: "2019-2022", company: "Dot Digital Philippines" }} >
             <p className="mt-4">
@@ -102,6 +73,35 @@ export const Resume: FC<Props> = ({ styles }) => {
               </li>
             </ul>
           </Experience>
+        </div>
+        <div className="col-lg-6 resume__column offset-lg-1">
+          <div className="resume__group mb-5">
+            <p className="h3">Education</p>
+            <div className="resume__content ps-5">
+              <p className="title mb-2 h3">BS COMPUTER ENGINEERING</p>
+              <span className="year">2014-2019</span>
+              <ul className="mt-4">
+                <li>Colegio De Montalban</li>
+                <li>Rodriguez. Rizal, Philippines</li>
+              </ul>
+            </div>
+          </div>
+          <div className="resume__group mb-5">
+            <div className="resume__content ps-5">
+              <p className="title mb-2 h3">WEB DEVELOPMENT</p>
+              <span className="year">MAY 2019</span>
+              <ul className="mt-4">
+                <li>TESDA Training for work scholarship program</li>
+                <li>88 North East Venture Corporation</li>
+              </ul>
+              <p className="title mb-2 h3">WEB DESIGN</p>
+              <span className="year">JUNE 2019</span>
+              <ul className="mt-4">
+                <li>TESDA Training for work scholarship program</li>
+                <li>88 North East Venture Corporation</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </SectionWrapper>

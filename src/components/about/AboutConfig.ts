@@ -187,7 +187,7 @@ export const Testimonials = [
   },
 ];
 
-export const ExperienceApp = ['Git', 'Github', 'Azure', 'Jira', 'Wordpress', 'Shopify', 'Gatsby JS', 'GraphQL', 'Cpanel', 'Mailchimp', 'Godaddy', 'Namecheap', 'Adobe Illustrator', 'Adobe XD', 'Figma', 'Filezilla', 'Divi', 'Elementor', 'WPBakery', 'Gutenberg',
+export const ExperienceApp = ['Git', 'Github', 'Azure', 'Jira', 'Next Js', 'Gatsby JS', 'Wordpress', 'Shopify', 'GraphQL', 'Cpanel', 'Mailchimp', 'Godaddy', 'Namecheap', 'Adobe Illustrator', 'Adobe XD', 'Figma', 'Filezilla', 'Divi', 'Elementor', 'WPBakery', 'Gutenberg',
 ];
 
 export const Plugins = ['ACF PRO', 'CPT UI', 'Woocommerce', 'Contactform 7', 'Yoast SEO', 'Memberpress', 'Itheme Security',
