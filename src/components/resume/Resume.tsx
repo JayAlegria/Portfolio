@@ -53,14 +53,19 @@ export const Resume: FC<Props> = ({ styles }) => {
               Handle all stuff regarding to website development <br /> (
               <i> except web design and content writing </i>)
             </p>
+            <p>
+              Handle all stuff regarding to website development <br /> (
+              <i> except web design and content writing </i>)
+            </p>
             <ul>
-              <li>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</li>
-              <li>
-                <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">
-                  dotdigitalph.com
-                </OutboundLink>
-              </li>
+              <li>Wordpress/Shopify Development</li>
+              <li>Bootstrap/Tailwind</li>
+              <li>PHP</li>
+              <li>SCSS</li>
+              <li>Git/Github</li>
             </ul>
+            <p>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</p>
+            <OutboundLink target="_blank" href="https://www.dotdigitalph.com/"> dotdigitalph.com</OutboundLink>
           </Experience>
           <Experience details={{ position: "Freelance Web Developer", year: "2020-2022", company: "Fiverr" }}>
             <p className="mt-4">Maintain and extend functionality of client's website</p>
