@@ -13,4 +13,8 @@ declare module '*.jpg' {
   export default content;
 }
 
+declare module '*.pdf' {
+  const content: any;
+  export default content;
+}
 declare module 'react-slick';
