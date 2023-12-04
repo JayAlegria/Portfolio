@@ -11,7 +11,7 @@ interface Props {
 export const Resume: FC<Props> = ({ styles }) => {
   return (
     <SectionWrapper name="resume" styles={styles}>
-      <SectionHead title="RESUME" subtitle="CHECK MY RESUME" />
+      <SectionHead title="RESUME" subtitle="CHECK MY RESUME" isResume />
       <div className="mt-5 row resume__row">
         <div className="col-lg-5 resume__column">
           <p className="h3">Professional Experience</p>

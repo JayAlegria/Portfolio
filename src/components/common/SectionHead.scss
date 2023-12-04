@@ -1,4 +1,6 @@
 .section-title {
+  display: flex;
+    justify-content: space-between;
   h3 {
     font-size: 35px;
   }
