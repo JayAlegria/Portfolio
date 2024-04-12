@@ -15,9 +15,23 @@ export const Resume: FC<Props> = ({ styles }) => {
       <div className="mt-5 row resume__row">
         <div className="col-lg-5 resume__column">
           <p className="h3">Professional Experience</p>
-          <Experience details={{ position: "Software Engineer", company: "Vesta", year: "2022-present" }}>
+          <Experience details={{ position: "Senior Web Developer", company: "Feiwin", year: "2024-present" }}>
+            <p>Feiwin is a visionary mobile game development company that makes next-generation online game solutions using best-in-class technologies</p>
+            <p>Work closely with backend developers to integrate web APIs and services for seamless data exchange between the web application and existing backend systems</p>
+            <p>Collaborate with cross-functional teams including mobile developers, designers, and product managers to understand existing iOS and Android app functionalities and features</p>
+            <p>Develop responsive web applications using modern web technologies such as HTML5, CSS3, JavaScript, and frameworks React.js</p>
+            <ul>
+              <li>React Js</li>
+              <li>Next Js</li>
+              <li>Redux / Redux Toolkit</li>
+              <li>Tailwind</li>
+              <li>Gitlab</li>
+            </ul>
+            <OutboundLink target="_blank" href="https://feiwin.net/">feiwin.net/</OutboundLink>
+          </Experience>
+          <Experience details={{ position: "Software Engineer", company: "Vesta", year: "2022-2024" }}>
             <p>Vesta is a global transaction guarantee company for online purchases, delivering unparalleled approval rates and a frictionless customer experience while eliminating chargebacks and other forms of digital fraud.</p>
-            <p>Works with the team to maintain and add features to the Internal and Customer Dashboards</p>
+            <p>Works in a team to maintain and add features to the Internal and Customer Dashboards</p>
             <ul>
               <li>React Js</li>
               <li>Next Js</li>
@@ -25,7 +39,7 @@ export const Resume: FC<Props> = ({ styles }) => {
             </ul>
             <OutboundLink target="_blank" href="https://www.vesta.io/about-vesta">vesta.io</OutboundLink>
           </Experience>
-          <Experience details={{ position: "Freelance Web Developer", year: "2022-present", company: "Dot Digital Philippines" }}>
+          <Experience details={{ position: "Freelance Web Developer", year: "2022-2024", company: "Dot Digital Philippines" }}>
             <p>
               Handle all stuff regarding to website development <br /> (
               <i> except web design and content writing </i>)

@@ -10,6 +10,9 @@
   .skill-card {
     text-align: center;
 
+    p {
+        color: #b5b5b5;
+    }
     &:hover {
       .bi,
       p {

@@ -11,7 +11,7 @@ export const AboutSkills = () => {
           <div key={skill.name} className="col-lg-3 col-6 mb-5">
             <div className="p-3 bg-semi-transparent skill-card">
               <i className={`bi mb-0 ${skill.icon} ${skill.iconColor}`}></i>
-              <p className="text-muted">{skill.name}</p>
+              <p>{skill.name}</p>
             </div>
           </div>
         ))}

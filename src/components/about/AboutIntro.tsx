@@ -13,7 +13,7 @@ export const AboutIntro = () => {
         <h3 className="text-primary">WEB DEVELOPER</h3>
         <p>Hello!</p>
         <p>
-          I am Jay, a <b>web developer</b> who has expertise in front end development, I commonly build websites using
+          I am Jay, a <b>Rockstar Web Developer</b> who has expertise in front end development, I build website using
           Wordpress, Shopify or React js.
         </p>
         <p>
