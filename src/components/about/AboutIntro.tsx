@@ -13,19 +13,16 @@ export const AboutIntro = () => {
         <h3 className="text-primary">WEB DEVELOPER</h3>
         <p>Hello!</p>
         <p>
-          I am Jay, a <b>Rockstar Web Developer</b> who has expertise in front end development, I build website using
-          Wordpress, Shopify or React js.
+          I am Jay, a <b>Rockstar Web Developer</b> with a strong focus on front-end development. My expertise spans
+          across various platforms, including React.js, Shopify, and WordPress.
         </p>
         <p>
           In Wordpress and Shopify development, I am more proficient in building pages using custom template or by
           creating its own theme. I can also build website using page builder or premium themes depends on client desire
           and timeline.
         </p>
+        <p>As a professional web developer, I offer the technical expertise you are seeking for your business need.</p>
         <AboutIntroDetails />
-        <p>
-          As a professional web developer, I offer the technical expertise you are seeking for your business need. In my
-          three years of experience I already handled different task regarding to website works.
-        </p>
       </div>
     </div>
   );
