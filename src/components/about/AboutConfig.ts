@@ -29,7 +29,7 @@ export const AboutMe = [
   },
   {
     title: 'Degree',
-    description: 'Bachelor',
+    description: 'Computer Engineer',
   },
 ];
 
