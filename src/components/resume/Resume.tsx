@@ -27,7 +27,7 @@ export const Resume: FC<Props> = ({ styles }) => {
               <li>Tailwind</li>
               <li>Gitlab</li>
             </ul>
-            <OutboundLink target="_blank" href="https://feiwin.net/">feiwin.net/</OutboundLink>
+            <OutboundLink target="_blank" href="https://feiwin.net/">feiwin.net</OutboundLink>
           </Experience>
           <Experience details={{ position: "Software Engineer", company: "Vesta", year: "2022-2024" }}>
             <p>Vesta is a global transaction guarantee company for online purchases, delivering unparalleled approval rates and a frictionless customer experience while eliminating chargebacks and other forms of digital fraud.</p>
@@ -35,7 +35,9 @@ export const Resume: FC<Props> = ({ styles }) => {
             <ul>
               <li>React Js</li>
               <li>Next Js</li>
-              <li>Git/Azure/Jira</li>
+              <li>Git</li>
+              <li>Azure</li>
+              <li>Jira</li>
             </ul>
             <OutboundLink target="_blank" href="https://www.vesta.io/about-vesta">vesta.io</OutboundLink>
           </Experience>
@@ -49,7 +51,8 @@ export const Resume: FC<Props> = ({ styles }) => {
               <li>Bootstrap/Tailwind</li>
               <li>PHP</li>
               <li>SCSS</li>
-              <li>Git/Github</li>
+              <li>Git</li>
+              <li>Github</li>
             </ul>
             <p>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</p>
             <OutboundLink target="_blank" href="https://www.dotdigitalph.com/">dotdigitalph.com</OutboundLink>
@@ -57,7 +60,7 @@ export const Resume: FC<Props> = ({ styles }) => {
           <Experience details={{ position: "Web Developer", year: "2019-2022", company: "Dot Digital Philippines" }} >
             <p className="mt-4">
               Help our company developed a software that will let the client and employee interact directly. In this
-              project I developed the landing page and help with the front-end in the dashboard using ReactJS and
+              project I developed the landing page and help with the front-end of the dashboard using ReactJS and
               React Typescript.
               <br /> Website:<OutboundLink href="https://brandcaptain.io/"> Brandcaptain.io</OutboundLink>
             </p>
@@ -67,16 +70,13 @@ export const Resume: FC<Props> = ({ styles }) => {
               Handle all stuff regarding to website development <br /> (
               <i> except web design and content writing </i>)
             </p>
-            <p>
-              Handle all stuff regarding to website development <br /> (
-              <i> except web design and content writing </i>)
-            </p>
             <ul>
               <li>Wordpress/Shopify Development</li>
               <li>Bootstrap/Tailwind</li>
               <li>PHP</li>
               <li>SCSS</li>
-              <li>Git/Github</li>
+              <li>Git</li>
+              <li>Github</li>
             </ul>
             <p>One Global Place 5th Avenue & 25 Street Fort Bonifacio, Taguig City</p>
             <OutboundLink target="_blank" href="https://www.dotdigitalph.com/"> dotdigitalph.com</OutboundLink>
