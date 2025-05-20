@@ -1,19 +1,11 @@
 export const AboutMe = [
   {
     title: 'Years of Experience',
-    description: '4 years',
-  },
-  {
-    title: 'Birthday',
-    description: '21 September 1997',
+    description: `${new Date().getFullYear() - 2019} years`,
   },
   {
     title: 'Website',
     description: 'jayworks.netlify.app',
-  },
-  {
-    title: 'Phone',
-    description: '+639165057086',
   },
   {
     title: 'Email',
@@ -28,8 +20,8 @@ export const AboutMe = [
     description: '26',
   },
   {
-    title: 'Degree',
-    description: 'Computer Engineer',
+    title: 'Education',
+    description: 'BS Computer Engineering',
   },
 ];
 
