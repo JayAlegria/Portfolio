@@ -17,7 +17,7 @@ export const AboutMe = [
   },
   {
     title: 'Age',
-    description: '26',
+    description: '28',
   },
   {
     title: 'Education',
