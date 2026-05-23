@@ -30,6 +30,8 @@ import adgarlic from "../../images/projects/adgarlic.webp";
 import adgarlicThumb from "../../images/projects/thumbnail/adgarlic.jpg";
 import cargo from "../../images/projects/cargo.webp";
 import cargoThumb from "../../images/projects/thumbnail/cargo.jpg";
+import evoworks from "../../images/projects/evoworks.webp";
+import evoworksThumb from "../../images/projects/thumbnail/evo.png"
 
 export interface PortfolioItem {
   name: string;
@@ -44,14 +46,14 @@ export interface PortfolioItem {
 
 export const PortfolioItems: PortfolioItem[] = [
   {
-    name: 'Adgarlic',
-    thumbnail: adgarlicThumb,
-    fullImage: adgarlic,
-    category: ['wordpress'],
+    name: 'Evoworks',
+    thumbnail: evoworksThumb,
+    fullImage: evoworks,
+    category: ['static'],
     url: 'https://adgarlic.com/',
-    techStack: ['Wordpress', 'SCSS', 'Greensocks Animation', 'Javascript', 'CSS'],
+    techStack: ['HTML', 'Tailwind', 'AlpineJs', 'Javascript'],
     description:
-      'Transform design into fully functional wordpress website.',
+      'Design, develop and publish evoworks company website',
   },
   {
     name: 'Farmfluence',
@@ -72,6 +74,16 @@ export const PortfolioItems: PortfolioItem[] = [
     techStack: ['Shopify', 'Liquid', 'Javascript', 'CSS'],
     description:
       'E-commerce website built with customized shopify theme.',
+  },
+  {
+    name: 'Adgarlic',
+    thumbnail: adgarlicThumb,
+    fullImage: adgarlic,
+    category: ['wordpress'],
+    url: 'https://adgarlic.com/',
+    techStack: ['Wordpress', 'SCSS', 'Greensocks Animation', 'Javascript', 'CSS'],
+    description:
+      'Transform design into fully functional wordpress website.',
   },
   {
     name: 'BrandCaptain',
@@ -203,7 +215,7 @@ export const PortfolioItems: PortfolioItem[] = [
   },
 ];
 
-export type PortfolioCategory = 'wordpress' | 'shopify' | 'react' | 'all';
+export type PortfolioCategory = 'wordpress' | 'shopify' | 'react' | 'static' | 'all';
 
 export type PortfolioFilterList = {
   name: string;
@@ -227,5 +239,9 @@ export const PortfolioFilterList: PortfolioFilterList[] = [
   {
     name: 'Shopify',
     category: 'shopify',
+  },
+  {
+    name: 'Static',
+    category: 'static',
   },
 ];
