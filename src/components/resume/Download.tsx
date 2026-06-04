@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from "./JayAlegria.pdf"
+import resume from "./JayAlegriaResume.pdf"
 export const Download = () => {
     return (
         <a href={resume} target='_blank'>
