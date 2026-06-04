@@ -50,7 +50,7 @@ export const PortfolioItems: PortfolioItem[] = [
     thumbnail: evoworksThumb,
     fullImage: evoworks,
     category: ['static'],
-    url: 'https://adgarlic.com/',
+    url: 'https://evoworks-its.com/',
     techStack: ['HTML', 'Tailwind', 'AlpineJs', 'Javascript'],
     description:
       'Design, develop and publish evoworks company website',
@@ -141,7 +141,7 @@ export const PortfolioItems: PortfolioItem[] = [
     category: ['wordpress'],
     techStack: ['Wordpress', 'PHP', 'SCSS', 'JQuery', 'Javascript'],
     plugins: ['Contact Form 7', 'Itheme Security', 'ACF', 'CPT UI', 'Memberpress', 'Buddypress'],
-    url: 'https://innomedscience.com/',
+    url: 'https://nextchapterraise.com/',
     description:
       'Membership and forum website that built by creating its own theme. This website introduced to me of how to use ACF and CPT UI',
   },
