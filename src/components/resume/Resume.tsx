@@ -23,6 +23,7 @@ export const Resume: FC<Props> = ({ styles }) => {
             <ul>
               <li>React Js</li>
               <li>Next Js</li>
+              <li>Typescript</li>
               <li>Redux / Redux Toolkit</li>
               <li>Tailwind</li>
               <li>Gitlab</li>
@@ -35,6 +36,7 @@ export const Resume: FC<Props> = ({ styles }) => {
             <ul>
               <li>React Js</li>
               <li>Next Js</li>
+              <li>Typescript</li>
               <li>Git</li>
               <li>Azure</li>
               <li>Jira</li>
