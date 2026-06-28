@@ -8,6 +8,11 @@ interface Props {
 }
 
 const ServicesItem = [
+    {
+    name: 'Workflow Automations',
+    subtext: "n8n | Zapier | Make",
+    icon: 'bi-robot',
+  },
   {
     name: 'Wordpress Theme Development',
     icon: 'bi-wordpress',
@@ -19,10 +24,6 @@ const ServicesItem = [
   {
     name: 'Extend Website Functionality',
     icon: 'bi-wordpress',
-  },
-  {
-    name: 'PSD to HTML',
-    icon: 'bi-filetype-html',
   },
   {
     name: 'PSD to Wordpress',
@@ -53,8 +54,9 @@ export const Services: FC<Props> = ({ styles }) => {
         {ServicesItem.map((serviceItem) => (
           <div key={serviceItem.name} className="col-lg-4 mb-4">
             <div className="p-5 services__item d-flex align-items-center justify-center flex-column text-center">
-              <span className={`bi ${serviceItem.icon}`}></span>
+              <span className={`bi ${serviceItem.icon}`}></span><br/>
               <strong className="h5 my-3">{serviceItem.name}</strong>
+              {serviceItem.subtext ? <small>{serviceItem.subtext}</small> : <p>&nbsp;</p>}
             </div>
           </div>
         ))}
