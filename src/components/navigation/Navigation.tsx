@@ -50,7 +50,7 @@ export const Navigation: FC = () => {
         </h1>
         {!TopNavigation && (
           <p className="text-gray">
-            I'm a front-end <span className="text-underline">Web developer</span> from Philippines
+            I'm a <span className="text-underline">Software Engineer</span> from Philippines
           </p>
         )}
         {!TopNavigation && <NavigationLinks />}

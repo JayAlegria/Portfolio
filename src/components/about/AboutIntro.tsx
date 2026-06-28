@@ -11,17 +11,10 @@ export const AboutIntro = () => {
       </div>
       <div className="col-lg-8">
         <h3 className="text-primary">WEB DEVELOPER</h3>
-        <p>Hello!</p>
         <p>
-          I am Jay, a <b>Rockstar Web Developer</b> with a strong focus on front-end development. My expertise spans
-          across various platforms, including React.js, Shopify, and WordPress.
+          I am a <b className='text-primary'>Frontend Software Engineer and Automation Specialist</b> with 7 years of experience building responsive web applications, e-commerce websites, and customer-facing platforms using React.js, Next.js, JavaScript, TypeScript, Shopify, and WordPress. Experienced in developing scalable frontend solutions, integrating REST APIs, optimizing website performance, and collaborating with cross-functional teams in Agile environments. Currently expanding expertise in <b className='text-primary'>AI automation</b> and workflow orchestration using n8n and Zapier.
         </p>
-        <p>
-          In Wordpress and Shopify development, I am more proficient in building pages using custom template or by
-          creating its own theme. I can also build website using page builder or premium themes depends on client desire
-          and timeline.
-        </p>
-        <p>As a professional web developer, I offer the technical expertise you are seeking for your business need.</p>
+        <p>As a professional Software Engineer, I offer the technical expertise you are seeking for your business need.</p>
         <AboutIntroDetails />
       </div>
     </div>

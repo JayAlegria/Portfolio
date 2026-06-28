@@ -90,8 +90,23 @@ export const Interest = [
 
 export const Skills = [
   {
-    name: 'React Js',
+    name: 'N8N | Zapier | Make',
+    icon: 'bi-robot',
+    iconColor: 'text-teal',
+  },
+  {
+    name: 'React | Next Js',
     icon: 'bi-filetype-jsx',
+    iconColor: 'text-coral',
+  },
+  {
+    name: 'Shopify Development',
+    icon: 'bi-shop',
+    iconColor: 'text-green',
+  },
+  {
+    name: 'Wordpress Development',
+    icon: 'bi-wordpress',
     iconColor: 'text-teal',
   },
   {
@@ -102,12 +117,7 @@ export const Skills = [
   {
     name: 'javascript',
     icon: 'bi-filetype-js',
-    iconColor: 'text-coral',
-  },
-  {
-    name: 'php',
-    icon: 'bi-filetype-php',
-    iconColor: 'text-teal',
+    iconColor: 'text-yellow',
   },
   {
     name: 'Liquid',
@@ -115,19 +125,9 @@ export const Skills = [
     iconColor: 'text-blue',
   },
   {
-    name: 'scss',
+    name: 'SCSS | CSS',
     icon: 'bi-filetype-scss',
-    iconColor: 'text-light-orange',
-  },
-  {
-    name: 'html',
-    icon: 'bi-filetype-html',
-    iconColor: 'text-primary',
-  },
-  {
-    name: 'Bootstrap',
-    icon: 'bi-bootstrap',
-    iconColor: 'text-green',
+    iconColor: 'text-coral',
   },
 ];
 
@@ -179,7 +179,7 @@ export const Testimonials = [
   },
 ];
 
-export const ExperienceApp = ['Redux/Redux Toolkit', 'Git', 'Github', 'Azure', 'Jira', 'Next Js', 'Gatsby JS', 'Wordpress', 'Shopify', 'GraphQL', 'Cpanel', 'Mailchimp', 'Godaddy', 'Namecheap', 'Adobe Illustrator', 'Adobe XD', 'Figma', 'Filezilla', 'Divi', 'Elementor', 'WPBakery', 'Gutenberg',
+export const ExperienceApp = ['n8n | Zapier | Make', 'Google Vertex | ChatGPT', 'Google Workspace', 'Redux | RTK', 'AWS | Azure | Google Cloud', 'Github | Gitlab | Git', 'Jira | Trello | Airtable', 'Cpanel | Pagoda | Filezilla', 'Godaddy | Namecheap', 'Adobe XD | Figma', 'Divi | Elementor', 'Cloudflare | Dynadot'
 ];
 
 export const Plugins = ['ACF PRO', 'CPT UI', 'Woocommerce', 'Contactform 7', 'Yoast SEO', 'Memberpress', 'Itheme Security',
