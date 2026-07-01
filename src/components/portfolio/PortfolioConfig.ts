@@ -201,7 +201,7 @@ export const PortfolioItems: PortfolioItem[] = [
     techStack: ['Wordpress', 'PHP', 'SCSS', 'JQuery', 'Javascript'],
     plugins: ['Contact Form 7', 'Itheme Security', 'ACF', 'CPT UI'],
     url: 'https://www.dotdigitalph.com/',
-    description: 'Managed and maintained content',
+    description: 'Managed and maintained the website',
   },
   {
     name: 'Innomedscience',

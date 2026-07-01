@@ -6,6 +6,7 @@ import { useTransition } from 'react-spring';
 import { Services } from './services/Services';
 import { Portfolio } from './portfolio/Portfolio';
 import { Contact } from './contact/Contact';
+import PortfolioSection from './ai-projects/AiProjects';
 
 export const SmartSectionDisplay: FC = () => {
   const activeSection = useSection();
@@ -25,7 +26,9 @@ export const SmartSectionDisplay: FC = () => {
         return <Resume styles={styles} />;
       case 'SERVICES':
         return <Services styles={styles} />;
-      case 'PORTFOLIO':
+      case 'AUTOMATIONS':
+        return <PortfolioSection styles={styles} />;
+      case 'WEB PROJECTS':
         return <Portfolio styles={styles} />;
       case 'CONTACT':
         return <Contact styles={styles} />;

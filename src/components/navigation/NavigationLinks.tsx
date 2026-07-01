@@ -19,7 +19,11 @@ const links = [
     entryAnimation: { y: 0, opacity: 1 },
   },
   {
-    title: 'Portfolio',
+    title: 'Web Projects',
+    entryAnimation: { y: 0, opacity: 1 },
+  },
+  {
+    title: 'Automations',
     entryAnimation: { y: 0, opacity: 1 },
   },
   {
