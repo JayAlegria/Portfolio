@@ -14,6 +14,7 @@ import { LuBrain } from 'react-icons/lu';
 import { TbTextScanAi } from 'react-icons/tb';
 import { VscTypeHierarchy } from 'react-icons/vsc';
 import { GrUpdate } from 'react-icons/gr';
+import { SectionWrapper } from '../layout/SectionWrapper';
 
 interface Props {
   styles: {};
@@ -111,7 +112,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
   };
 
   return (
-    <section className="p-auto-section" id="automations">
+    <SectionWrapper name="portfolio p-auto-section" styles={styles} id="automations">
       <div className="p-auto-wrapper">
         {/* Section Header matching your existing design */}
         <div className="p-auto-header-area">
@@ -299,7 +300,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
           </div>
         </div>
       )}
-    </section>
+    </SectionWrapper>
   );
 };
 
