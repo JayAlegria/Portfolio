@@ -33,7 +33,7 @@ export const Portfolio: FC<Props> = ({ styles }) => {
     <SectionWrapper name="portfolio" styles={styles}>
       <SectionHead title="Portfolio" subtitle="My Works" />
       <small className="text-muted d-block col-lg-4">
-        I built all the website below, except my portfolio, under management of{' '}
+        I built most of the website below under management of{' '}
         <OutboundLink href="https://www.dotdigitalph.com/">Dot Digital Philippines</OutboundLink>
       </small>
       <PortfolioFilters onFilter={onFilter} activeCat={portfolioFilter} />

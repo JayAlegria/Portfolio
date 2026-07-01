@@ -20,7 +20,7 @@ export const PortfolioBox: FC<Props> = ({ portfolioData }) => {
               e.preventDefault();
               open(e);
             }}
-            ref={ref as React.MutableRefObject<HTMLDivElement>}
+            ref={ref}
           >
             <img className="img-fluid" src={thumbnail} alt={name} />
             <div className="overlay">
