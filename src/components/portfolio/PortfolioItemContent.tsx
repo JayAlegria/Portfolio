@@ -23,6 +23,9 @@ export const PortfolioItemContent: FC<Props> = ({ project }) => {
               <p className="category">
                 <b className="me-2">Category: </b> {project.category.toString()}
               </p>
+              {project.company &&  <p className="category">
+                <b className="me-2">Company: </b> {project.company}
+              </p>}
               {project.url && <p className="category">
                 <b className="me-2">Link: </b>{' '}
                 <OutboundLink target="_blank" href={project.url}>
