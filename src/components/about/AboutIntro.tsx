@@ -1,7 +1,7 @@
 import React from 'react';
 import { AboutIntroDetails } from './AboutIntroDetails';
 import './AboutIntro.scss';
-import me from '../../images/me.jpg';
+import me from '../../images/me.png';
 
 export const AboutIntro = () => {
   return (
