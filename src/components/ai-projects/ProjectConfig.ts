@@ -1,7 +1,7 @@
 export interface WorkflowStep {
   label: string;
   subtext: string;
-  icon: 'webhook' | 'database' | 'ai' | 'slack' | 'calendar' | 'email' | 'timer' | 'check' | 'tickets' | 'update';
+  icon: 'webhook' | 'database' | 'ai' | 'slack' | 'calendar' | 'email' | 'timer' | 'check' | 'tickets' | 'update' | 'document' | 'bot' | 'detective' | 'analytics' | 'editFile' | 'telegram'
 }
 
 export interface Workflow {
@@ -24,8 +24,116 @@ export interface Project {
 }
 export const projectsData: Project[] = [
   {
+    id: 'resume-enhancer',
+    indexStr: '1 / 3',
+    title: 'Resume Enhancer',
+    subtitle: 'AI-Powered Resume Optimization Engine',
+    category: 'AI Automation / HR Technology',
+    summary: "An AI-powered resume enhancement automation that analyzes a candidate's resume against a target job description, identifies skill and experience gaps, and generates tailored recommendations to improve alignment. The system optimizes resume content, highlights relevant qualifications, and increases the likelihood of passing applicant tracking systems (ATS) and attracting recruiter attention.",
+    problem: 'Job seekers often submit generic resumes that fail to align with specific job requirements, resulting in poor ATS scores, missed keyword matches, and reduced interview opportunities. Manual resume tailoring is time-consuming and inconsistent, creating inefficiencies in the job application process.',
+    techStack: [
+      'n8n',
+      'Google Vertex AI',
+      'Gemini 2.5 Pro',
+      'Airtable',
+      'Telegram',
+      'GitHub API'
+    ],
+    keyFeatures: [
+      'AI-powered resume and job description analysis',
+      'Job description compatibility scoring',
+      'Skill gap and keyword matching',
+      'Automated resume enhancement',
+      'Strengths and weaknesses assessment',
+      'Cover letter builder'
+    ],
+    outcomes: [
+      'Reduced manual resume tailoring time by up to 90%',
+      'Improved ATS compatibility through keyword optimization',
+      'Identified missing skills and experience gaps automatically',
+      'Automated the end-to-end resume optimization workflow'
+    ],
+    workflows: [
+      {
+        title: 'Resume Analysis Workflow',
+        steps: [
+          {
+            label: 'Telegram Bot',
+            subtext: 'Sends the job descriptions',
+            icon: 'bot'
+          },
+          {
+            label: 'Document Inputs',
+            subtext: 'Captures job details and resume',
+            icon: 'document'
+          },
+          {
+            label: 'AI Parsing Engine',
+            subtext: 'Extracts skills, experience, and keywords',
+            icon: 'ai'
+          },
+          {
+            label: 'ATS Matching',
+            subtext: 'Calculates resume-job alignment score',
+            icon: 'check'
+          },
+          {
+            label: 'Gap Analysis',
+            subtext: 'Identifies missing skills and keywords',
+            icon: 'analytics'
+          }
+        ]
+      },
+      {
+        title: 'Resume Enhancement Workflow',
+        steps: [
+          {
+            label: 'AI Recommendation Engine',
+            subtext: 'Generates tailored improvements',
+            icon: 'ai'
+          },
+          {
+            label: 'Content Optimization',
+            subtext: 'Enhances resume sections and wording',
+            icon: 'document'
+          },
+          {
+            label: 'Professional Summary Generator',
+            subtext: 'Creates role-specific summary',
+            icon: 'check'
+          },
+          {
+            label: 'ATS Optimization',
+            subtext: 'Improves keyword relevance',
+            icon: 'editFile'
+          }
+        ]
+      },
+      {
+        title: 'Report Delivery Workflow',
+        steps: [
+          {
+            label: 'Score Compilation',
+            subtext: 'Aggregates analysis results',
+            icon: 'analytics'
+          },
+          {
+            label: 'Report Generation',
+            subtext: 'Creates detailed enhancement report',
+            icon: 'editFile'
+          },
+          {
+            label: 'Telegram Notification',
+            subtext: 'Delivers results instantly',
+            icon: 'telegram'
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: 'isp-assistant',
-    indexStr: '1 / 2',
+    indexStr: '2 / 3',
     title: 'ISP Management Assistant',
     subtitle: 'AI-Powered ISP Operations Automator',
     category: 'AI Automation / Operations',
@@ -76,7 +184,7 @@ export const projectsData: Project[] = [
   },
   {
     id: 'recruitment-assistant',
-    indexStr: '2 / 2',
+    indexStr: '3 / 3',
     title: 'AI Recruitment Assistant',
     subtitle: 'End-to-End Recruitment Pipeline Automation',
     category: 'AI Automation / HR Tech',

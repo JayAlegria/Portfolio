@@ -6,15 +6,23 @@ import ispa2 from "../../images/projects/automation/ISPA-Flow-2.png"
 import ispa3 from "../../images/projects/automation/ISPA-Flow-3.png"
 import ispa4 from "../../images/projects/automation/ISPA-Flow-4.png"
 import ra1 from "../../images/projects/automation/RA-flow-1.png"
-import ra2 from "../../images/projects/automation//RA-flow-2.png"
+import ra2 from "../../images/projects/automation/RA-flow-2.png"
 import ra3 from "../../images/projects/automation/ISPA-Flow-3.png"
 import ra4 from "../../images/projects/automation/ISPA-Flow-4.png"
+import re1 from "../../images/projects/automation/re1.png"
+import re2 from "../../images/projects/automation/re2.png"
+import re3 from "../../images/projects/automation/re3.png"
+import re4 from "../../images/projects/automation/re3.png"
+
 import { MdOutlineWebhook } from 'react-icons/md';
 import { LuBrain } from 'react-icons/lu';
 import { TbTextScanAi } from 'react-icons/tb';
-import { VscTypeHierarchy } from 'react-icons/vsc';
-import { GrUpdate } from 'react-icons/gr';
+import { VscEditCode, VscTypeHierarchy } from 'react-icons/vsc';
+import { GrAnalytics, GrUpdate } from 'react-icons/gr';
 import { SectionWrapper } from '../layout/SectionWrapper';
+import { HiOutlineDocumentSearch } from 'react-icons/hi';
+import { FaRobot, FaTelegram } from 'react-icons/fa';
+import { PiDetective } from 'react-icons/pi';
 
 interface Props {
   styles: {};
@@ -25,6 +33,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
   const [activeCarouselSlide, setActiveCarouselSlide] = useState<{ [key: string]: number }>({
     'isp-assistant': 0,
     'recruitment-assistant': 0,
+    'resume-enhancer': 0
   });
 
   // SVG Icons Helper
@@ -33,23 +42,35 @@ export const AiProjects: FC<Props> = ({ styles }) => {
       case 'webhook':
         return <MdOutlineWebhook />;
       case 'database':
-        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>;
+        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" /></svg>;
       case 'ai':
         return <LuBrain />;
       case 'slack':
-        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>;
+        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>;
       case 'calendar':
-        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>;
+        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>;
       case 'email':
-        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>;
+        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>;
       case 'timer':
-        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
+        return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>;
       case 'check':
         return <TbTextScanAi />;
       case 'tickets':
         return <VscTypeHierarchy />;
-        case 'update': 
+      case 'update':
         return <GrUpdate />;
+      case 'document':
+        return <HiOutlineDocumentSearch />
+      case 'bot':
+        return <FaRobot />
+      case 'detective':
+        return <PiDetective />
+      case 'analytics':
+        return <GrAnalytics />
+      case 'editFile':
+        return <VscEditCode />
+      case 'telegram':
+        return <FaTelegram />
       default:
         return null;
     }
@@ -93,17 +114,28 @@ export const AiProjects: FC<Props> = ({ styles }) => {
         return (<img className="img-fluid" src={ispa1}></img>);
       } else if (slideIndex === 1) {
         return (<img className="img-fluid" src={ispa2}></img>);
-      } else if(slideIndex === 2) {
+      } else if (slideIndex === 2) {
         return (<img className="img-fluid" src={ispa3}></img>);
       } else {
         return (<img className="img-fluid" src={ispa4}></img>);
       }
-    } else {
+    } else if (projectId === 'resume-enhancer') {
+      if (slideIndex === 0) {
+        return (<img className="img-fluid" src={re1}></img>);
+      } else if (slideIndex === 1) {
+        return (<img className="img-fluid" src={re2}></img>);
+      } else if (slideIndex === 2) {
+        return (<img className="img-fluid" src={re3}></img>);
+      } else {
+        return (<img className="img-fluid" src={re4}></img>);
+      }
+    }
+    else {
       if (slideIndex === 0) {
         return (<img className="img-fluid" src={ra1}></img>);
       } else if (slideIndex === 1) {
         return (<img className="img-fluid" src={ra2}></img>);
-      } else if(slideIndex === 2) {
+      } else if (slideIndex === 2) {
         return (<img className="img-fluid" src={ra3}></img>);
       } else {
         return (<img className="img-fluid" src={ra4}></img>);
@@ -145,7 +177,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
                     >
                       &#10216;
                     </button>
-                    
+
                     <div className="p-auto-carousel-track">
                       {renderDashboardMockup(project.id, currentSlide)}
                     </div>
@@ -174,7 +206,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
                   <span className="p-auto-project-category">{project.category}</span>
                   <h3 className="p-auto-project-title">{project.title}</h3>
                   <p className="p-auto-summary">{project.summary}</p>
-                  
+
                   <div className="p-auto-tech-container">
                     {project.techStack.slice(0, 3).map((tech) => (
                       <span key={tech} className="p-auto-tech-pill">{tech}</span>
@@ -260,7 +292,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
                 </div>
 
                 <div className="p-auto-details-group">
-                  <h4>Business Problem Solved</h4>
+                  <h4>Problem Solved</h4>
                   <p className="p-auto-body-paragraph">{selectedProject.problem}</p>
                 </div>
 
@@ -283,7 +315,7 @@ export const AiProjects: FC<Props> = ({ styles }) => {
                 </div>
 
                 <div className="p-auto-details-group">
-                  <h4>Business Outcomes & Results</h4>
+                  <h4>Outcomes & Results</h4>
                   <ul className="p-auto-outcome-list">
                     {selectedProject.outcomes.map((out, i) => (
                       <li key={i}>
